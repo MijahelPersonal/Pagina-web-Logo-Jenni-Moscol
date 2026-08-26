@@ -1,0 +1,388 @@
+/* ===========================
+   VARIABLES Y BASE
+=========================== */
+.metodologia-page {
+  --primary-color: #d9825b;
+  --primary-hover: #c86d48;
+  --text-main: #2b2b2b;
+  --text-light: #555555;
+  --bg-main: #faf8f5;
+  --white: #ffffff;
+  --font-title: 'Cormorant Garamond', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  font-family: var(--font-body);
+  background: var(--bg-main);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+.metodologia-page h1, 
+.metodologia-page h2, 
+.metodologia-page h3 {
+  font-family: var(--font-title);
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* ===========================
+   1. HERO SECTION
+=========================== */
+.met-hero {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.met-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.met-hero-container-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0 60px 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.met-hero-content {
+  max-width: 750px;
+  color: var(--white);
+}
+
+.met-hero-subtitle {
+  display: inline-block;
+  color: #ffd2bd;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.met-hero h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--white);
+  font-family: 'Parisienne', cursive;
+}
+
+.met-hero p {
+  font-size: 1.1rem;
+  color: var(--white);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.met-hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.met-btn-hero {
+  display: inline-block;
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(217, 130, 91, 0.4);
+}
+
+.met-btn-hero:hover {
+  transform: translateY(-3px);
+  background: var(--primary-hover);
+  color: var(--white);
+  box-shadow: 0 15px 30px rgba(217, 130, 91, 0.5);
+  text-decoration: none;
+}
+
+/* ===========================
+   2. WAVE DIVIDER
+=========================== */
+.met-wave-divider {
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+  background: transparent;
+  margin-top: -200px;
+  position: relative;
+  z-index: 2;
+  line-height: 0;
+}
+
+.met-wave-divider svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.met-wave-divider .met-wave-back { fill: rgba(255, 255, 255, 0.25); }
+.met-wave-divider .met-wave-mid { fill: rgba(255, 255, 255, 0.45); }
+.met-wave-divider .met-wave-front { fill: #faf4f0; }
+
+/* =========================================================
+   3. SECCIÓN METODOLOGÍA (SOBRE EL FONDO CLARO)
+========================================================= */
+.met-about {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #faf4f0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+}
+
+.met-about-content-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 46% 45%;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.met-about-text {
+  padding-left: 7vw;
+  padding-right: 3vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 3;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.met-about-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.met-about-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  color: #222222;
+  margin-bottom: 22px;
+  font-family: var(--font-title);
+  font-weight: 700;
+}
+
+.met-about-paragraph-main {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+/* GRID EN 2 COLUMNAS CON GLASSMORPHISM */
+.met-about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.met-about-feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.met-about-feature-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.55);
+  border-color: var(--primary-color);
+  box-shadow: 0 12px 28px rgba(217, 130, 91, 0.12);
+}
+
+.met-feature-bullet {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.met-about-feature-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.met-about-feature-item strong {
+  display: block;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* FOTO DERECHA */
+.met-about-image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 55vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.met-about-card-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.met-about-slider-frame {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 20%, black 50%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 20%, black 50%);
+}
+
+.met-slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+/* ===================================================
+   RESPONSIVE / MÓVIL
+=================================================== */
+@media (max-width: 900px) {
+  .met-about-content-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .met-hero-container-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 30px 15px 100px 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .met-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    margin: 0 auto !important;
+  }
+
+  .met-hero-subtitle {
+    font-size: 0.75rem !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .met-hero-content h1 {
+    font-size: 3.0rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .met-hero-content p {
+    font-size: 0.95rem !important;
+    margin-bottom: 25px !important;
+  }
+
+  .met-hero-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .met-btn-hero {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    max-width: 320px !important;
+  }
+
+  .met-about {
+    flex-direction: column !important;
+    min-height: auto !important;
+    padding: 50px 0 0 0 !important;
+  }
+
+  .met-about-text {
+    padding: 0 6% 40px 6% !important;
+  }
+
+  .met-about-subtitle, .met-about-text h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .met-about-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .met-about-image-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 350px !important;
+  }
+
+  .met-about-slider-frame {
+    height: 100% !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+  }
+}

@@ -1,0 +1,721 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   VARIABLES GLOBALES
+=========================== */
+:root {
+  --primary-color: #d9825b;
+  --primary-hover: #c86d48;
+  --secondary-color: #f8e8df;
+  --text-main: #2b2b2b;
+  --text-light: #555555;
+  --bg-main: #faf8f5;
+  --white: #ffffff;
+  --border-color: #eaded7;
+  --radius-card: 24px;
+}
+
+/* ===========================
+   BASE
+=========================== */
+.contacto-page {
+  width: 100%;
+  background: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* ===========================
+   1. HERO CONTACTO
+=========================== */
+.contacto-hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.contacto-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  z-index: 1;
+}
+
+.contacto-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: var(--white);
+}
+
+.contacto-etiqueta {
+  display: inline-block;
+  color: #ffd2bd;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contacto-hero h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--white);
+  font-family: 'Parisienne', cursive;
+}
+
+.contacto-hero p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 35px;
+  max-width: 560px;
+}
+
+.btn-hero-contacto {
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(217, 130, 91, 0.4);
+}
+
+.btn-hero-contacto:hover {
+  transform: translateY(-3px);
+  background: var(--primary-hover);
+  color: var(--white);
+  box-shadow: 0 15px 30px rgba(217, 130, 91, 0.5);
+}
+
+/* ===========================
+   2. WAVE DIVIDER
+=========================== */
+.wave-divider-contacto {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
+  background: transparent;
+  margin-top: -180px;
+  position: relative;
+  z-index: 3;
+  line-height: 0;
+}
+
+.wave-divider-contacto svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wave-divider-contacto .wave-back { fill: rgba(255, 255, 255, 0.35); }
+.wave-divider-contacto .wave-mid { fill: rgba(255, 255, 255, 0.65); }
+.wave-divider-contacto .wave-front { fill: var(--white); }
+
+/* ===========================
+   3. SECCIÓN HISTORIA Y TARJETAS
+=========================== */
+.contacto-historia {
+  padding: 100px 5%;
+  background: var(--white);
+}
+
+.historia-texto {
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+}
+
+.historia-texto h2 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 18px;
+}
+
+.historia-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.historia-card {
+  position: relative;
+  height: 420px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  text-align: left;
+  background: #111;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.historia-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.historia-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.historia-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(18, 18, 18, 0.95) 0%,
+    rgba(18, 18, 18, 0.4) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  z-index: 2;
+}
+
+.historia-card-content {
+  position: relative;
+  z-index: 3;
+}
+
+.historia-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.historia-card p {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* =========================================================
+   4. SECCIÓN FORMULARIO (ESTRUCTURA METODOLOGÍA PANTALLA COMPLETA)
+========================================================= */
+.met-about {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #faf4f0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+}
+
+.met-about-content-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 46% 45%;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* --- COLUMNA IZQUIERDA: TEXTO Y FORMULARIO --- */
+.met-about-text {
+  padding-left: 7vw;
+  padding-right: 3vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 3;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.met-about-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-color, #d9825b);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.met-about-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  color: #222222;
+  margin-bottom: 18px;
+  font-family: var(--font-title, sans-serif);
+  font-weight: 700;
+}
+
+.met-about-paragraph-main {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444444;
+  margin-bottom: 25px;
+  background: rgba(250, 244, 240, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* CUERPO DEL FORMULARIO */
+.formulario-body {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+/* INPUTS CON GLASSMORPHISM (FONDO BLANCO SEMI-TRANSPARENTE Y BLUR) */
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #64748b;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  z-index: 5;
+  transition: color 0.3s ease;
+}
+
+.met-about-text input[type="text"],
+.met-about-text input[type="email"],
+.met-about-text textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.input-with-icon input {
+  padding-left: 44px !important;
+}
+
+.met-about-text textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.met-about-text input:focus,
+.met-about-text textarea:focus {
+  background: #ffffff;
+  border-color: var(--primary-color, #d9825b);
+  box-shadow: 0 0 0 4px rgba(217, 130, 91, 0.2);
+}
+
+.input-with-icon:focus-within .input-icon {
+  color: var(--primary-color, #d9825b);
+}
+
+/* CHECKBOX */
+.contacto-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0 25px 0;
+}
+
+.contacto-check input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color, #d9825b);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contacto-check label {
+  font-size: 0.88rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.contacto-check a {
+  color: var(--primary-color, #d9825b);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* BOTÓN ENVIAR */
+.btn-formulario {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background: var(--primary-color, #d9825b);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(217, 130, 91, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-formulario:hover {
+  background: var(--primary-hover, #c86d48);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(217, 130, 91, 0.45);
+}
+
+/* --- COLUMNA DERECHA: FOTO EXTENDIDA (MÁSCARA Y DEGRADADO IDÉNTICO) --- */
+.met-about-image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 55vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.met-about-card-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.met-about-slider-frame {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 20%, black 50%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 20%, black 50%);
+}
+
+.met-slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+.error-email-real {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  display: block;
+  font-weight: 500;
+}
+/* ==========================================
+   ESTADOS DEL FORMULARIO DE CONTACTO (FORMSPREE)
+========================================== */
+.mensaje-exito-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  max-width: 480px;
+  margin: 20px 0;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.exito-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background-color: #f8e8df;
+  color: var(--primary-hover, #c86d48);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.mensaje-exito-card h3 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: 'Parisienne', cursive;
+}
+
+.mensaje-exito-card p {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   ESTILOS DE LOS INPUTS (VERDE MENTA AL ESCRIBIR / AUTOCOMPLETAR)
+========================================== */
+
+/* 1. Cuando el usuario hace clic o está escribiendo en el campo */
+.formulario-body input:focus,
+.formulario-body textarea:focus {
+  background-color: #e6fffa !important; /* Verde menta suave */
+  border-color: #b2f5ea !important;
+  outline: none;
+}
+
+/* 2. Cuando el navegador autocompleta automáticamente */
+.formulario-body input:-webkit-autofill,
+.formulario-body input:-webkit-autofill:hover, 
+.formulario-body input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #e6fffa inset !important;
+  border: 1px solid #b2f5ea !important;
+  -webkit-text-fill-color: #234e52 !important;
+}
+/* ===========================
+   5. SECCIÓN POLÍTICA PRIVACIDAD
+=========================== */
+.contacto-privacidad {
+  padding: 80px 10%;
+  background: var(--white);
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.privacidad-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contacto-privacidad h2 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contacto-privacidad p {
+  color: var(--text-light);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.link-privacidad {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.link-privacidad:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  /* --- HERO CONTACTO MÓVIL --- */
+  .contacto-hero {
+    min-height: 78vh !important;
+    padding: 110px 20px 140px 20px !important; /* Mantenemos tus paddings intactos */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important; /* SOLO cambia esto a center */
+    text-align: center !important;
+  }
+
+  .contacto-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    margin: 0 auto !important;
+  }
+
+  .contacto-etiqueta {
+    font-size: 0.75rem !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .contacto-hero h1 {
+    font-size:3.5rem !important;
+    margin-bottom: 10px !important;
+    line-height: 1.15 !important;
+  }
+
+  .contacto-hero p {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 22px !important;
+  }
+
+  /* --- BOTÓN CENTRADO A LA FUERZA --- */
+  .btn-hero-contacto {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    
+    /* Reseteo de márgenes y paddings fantasmas */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important; /* Por si algún hover o animación lo movió */
+    
+    /* Dimensiones fijas para que no dependa del texto */
+    width: 260px !important; 
+    max-width: 90% !important;
+    height: 52px !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* OLA IDÉNTICA A LAS OTRAS PÁGINAS */
+  .wave-divider-contacto {
+    position: relative !important;
+    width: 100% !important;
+    height: 120px !important;
+    margin-top: -120px !important;
+    z-index: 3 !important;
+    pointer-events: none !important;
+  }
+
+  .wave-divider-contacto svg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+  }
+
+  /* --- HISTORIA MÓVIL --- */
+  .contacto-historia {
+    padding: 50px 20px;
+  }
+
+  .historia-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-card {
+    height: 340px;
+  }
+
+  /* --- FORMULARIO METODOLOGÍA MÓVIL --- */
+  .met-about {
+    flex-direction: column !important;
+    min-height: auto !important;
+    padding: 50px 0 0 0 !important;
+  }
+
+  .met-about-text {
+    padding: 0 6% 40px 6% !important;
+  }
+
+  .met-about-subtitle, 
+  .met-about-text h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .met-about-image-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 350px !important;
+  }
+
+  .met-about-slider-frame {
+    height: 100% !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+  }
+}

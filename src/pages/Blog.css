@@ -1,0 +1,333 @@
+/* ===========================
+   1. HERO SECTION (RÉPLICA SRV1)
+=========================== */
+.blog-hero {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.blog-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.blog-hero-container-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 60px 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-hero-content {
+  max-width: 750px;
+  color: var(--white, #ffffff);
+}
+
+.blog-hero-subtitle {
+  display: inline-block;
+  color: #ffd2bd;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.blog-hero h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--white, #ffffff);
+  font-family: 'Parisienne', cursive;
+}
+
+.blog-hero p {
+  font-size: 1.1rem;
+  color: var(--white, #ffffff);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.blog-hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.blog-btn-hero {
+  display: inline-block;
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: var(--primary-color, #d9825b);
+  color: var(--white, #ffffff);
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(217, 130, 91, 0.4);
+}
+
+.blog-btn-hero:hover {
+  transform: translateY(-3px);
+  background: var(--primary-hover, #c4724d);
+  color: var(--white, #ffffff);
+  box-shadow: 0 15px 30px rgba(217, 130, 91, 0.5);
+  text-decoration: none;
+}
+
+/* ===========================
+   2. WAVE DIVIDER (BLOG)
+=========================== */
+.blog-wave-container {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
+  background: transparent;
+  margin-top: -180px;
+  position: relative;
+  z-index: 3;
+  line-height: 0;
+}
+
+.blog-wave-container svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.blog-wave-layer-back { fill: rgba(255, 255, 255, 0.3); }
+.blog-wave-layer-mid { fill: rgba(255, 255, 255, 0.6); }
+.blog-wave-layer-front { fill: var(--bg-main, #fcf9f5); }
+
+
+/* ===========================
+   ESTILOS DE LA PÁGINA DE BLOG
+=========================== */
+.blog-page-container-page {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
+
+.blog-page-list-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* Fila individual idéntica a la estructura de .mini-about */
+.blog-page-row-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* Si es impar, invertimos el orden para que sea dinámico */
+.blog-page-row-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.blog-page-row-text {
+  flex: 1;
+  max-width: 580px;
+  text-align: left;
+}
+
+.blog-page-row-category {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.blog-page-row-text h2 {
+  font-family: var(--font-title);
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: var(--text-main);
+}
+
+.blog-page-row-text p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.blog-page-row-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: opacity 0.2s ease;
+}
+
+.blog-page-row-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Contenedor de la tarjeta idéntico al componente de imagen de inicio */
+.blog-page-row-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-page-image-card-box {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 520px;
+  background: #f4efe9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.blog-page-image-card-dots {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.blog-page-image-card-dots span {
+  width: 7px;
+  height: 7px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.blog-page-image-card-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-page-image-card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 25px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+  color: #ffffff;
+  text-align: left;
+}
+
+.blog-page-image-card-caption h4 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin: 0 0 5px 0;
+  color: #ffffff;
+}
+
+.blog-page-image-card-caption p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* ===========================
+   RESPONSIVE (BLOG)
+=========================== */
+@media (max-width: 950px) {
+  .blog-page-row-item,
+  .blog-page-row-item.reverse {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .blog-page-row-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .blog-page-row-image-container {
+    width: 100%;
+  }
+
+  .blog-page-list-section {
+    padding: 60px 15px !important;
+    gap: 60px !important;
+  }
+
+  .blog-page-row-text h2 {
+    font-size: 2.1rem !important;
+  }
+
+  .blog-page-image-card-box {
+    width: 100% !important;
+    max-width: 360px !important;
+    height: 400px !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Centrado del contenedor principal */
+  .blog-hero-container-inner {
+    padding: 0 20px !important;
+    justify-content: center !important;
+  }
+
+  /* Centrado de todo el texto y elementos internos */
+  .blog-hero-content {
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Centrado específico del h1 y ajuste de tamaño */
+  .blog-hero h1 {
+    text-align: center !important;
+    font-size: 3.0rem !important;
+    line-height: 1.25 !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  /* Centrado del párrafo */
+  .blog-hero p {
+    text-align: center !important;
+    margin: 0 auto 25px auto !important;
+  }
+
+  /* Centrado del botón */
+  .blog-hero-buttons {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}

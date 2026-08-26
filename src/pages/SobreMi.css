@@ -1,0 +1,547 @@
+/* ===========================
+   ESTILOS GENERALES DE LA PÁGINA
+=========================== */
+.sobremi-page {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ===========================
+   HERO SOBRE MÍ (Misma línea que Inicio)
+=========================== */
+.sobremi-hero {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Overlay de sombra idéntico a Inicio */
+.sobremi-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+.sobremi-hero-container-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 60px 0 5%;
+  display: flex;
+  align-items: center;
+}
+
+.sobremi-hero-content {
+  max-width: 750px;
+  color: var(--white);
+}
+
+.sobremi-hero-subtitle {
+  display: inline-block;
+  color: #ffd2bd;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.sobremi-hero-content h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--white);
+  font-weight: 700;
+  font-family: 'Parisienne', cursive;
+}
+
+.sobremi-hero-content p {
+  font-size: 1.1rem;
+  color: var(--white);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.sobremi-hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Botón idéntico al de Inicio */
+.sobremi-btn-hero {
+  display: inline-block;
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: var(--primary-color);
+  color: var(--white) !important;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(217, 130, 91, 0.4);
+}
+
+.sobremi-btn-hero:hover {
+  transform: translateY(-3px);
+  background: var(--primary-hover, #b86642);
+  color: var(--white) !important;
+  box-shadow: 0 15px 30px rgba(217, 130, 91, 0.5);
+  text-decoration: none;
+}
+
+/* ===========================
+   HISTORIA Y CARRUSEL LATERAL
+=========================== */
+.about-story-section {
+  padding: 100px 10%;
+  background: var(--white);
+}
+
+.story-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text h2 {
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.story-text p {
+  font-family: var(--font-body);
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* Carrusel Automático de la Derecha (Formato Vertical / Retrato) */
+.story-carousel-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fdf6f1;
+  border: 1px solid rgba(217, 130, 91, 0.25);
+  box-shadow: 0 15px 35px rgba(217, 130, 91, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel-slides-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+  color: #fff;
+  z-index: 3;
+  text-align: left;
+}
+
+.carousel-caption h3 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-dots {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background: var(--primary-color, #d9825b);
+  transform: scale(1.3);
+}
+
+/* ===================================================
+   SECCIÓN TRAYECTORIA PROFESIONAL (ESTILO MODELO IMAGEN)
+=================================================== */
+.sm-trayectoria-section {
+  padding: 90px 10%;
+  background: #faf8f5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sm-main-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sm-main-header h2 {
+  font-family: var(--font-title, serif);
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.sm-main-header p {
+  font-family: var(--font-body, sans-serif);
+  font-size: 1.1rem;
+  color: var(--text-light, #666666);
+  margin: 0;
+}
+
+/* BLOQUES (Formación / Experiencia) */
+.sm-block-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+
+.sm-block-title {
+  text-align: center;
+  font-family: var(--font-title, serif);
+  font-size: 1.9rem;
+  color: #1a1a1a;
+  margin-bottom: 35px;
+  position: relative;
+  display: block;
+}
+
+.sm-block-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color, #d9825b);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* GRID DE 2 COLUMNAS (Exacto a la imagen) */
+.sm-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* CENTRAR LA ÚLTIMA TARJETA SI ES IMPAR (por ejemplo, la 5ta) */
+.sm-cards-grid > .sm-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;     /* Ocupa todo el ancho de la fila */
+  justify-self: center;    /* Se centra horizontalmente */
+  width: 100%;             /* O pon ancho máximo ej: max-width: 535px si quieres que mida igual que las otras */
+  max-width: 535px;        /* Mantiene el tamaño exacto de las tarjetas de arriba */
+}
+
+/* TARJETA APAISADA ESTILO IMAGEN DE REFERENCIA */
+.sm-card {
+  position: relative;
+  background: var(--white, #ffffff);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(217, 130, 91, 0.18);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s ease;
+}
+
+.sm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(217, 130, 91, 0.15);
+  border-color: rgba(217, 130, 91, 0.4);
+}
+
+/* ETIQUETA / AÑO EN LA ESQUINA SUPERIOR DERECHA */
+.sm-badge-year {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-color, #d9825b);
+  background: #fbf1ec;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* CONTENEDOR DEL LOGO / IMAGEN EN LA IZQUIERDA */
+.sm-card-logo {
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0e6df;
+}
+
+.sm-card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* TEXTOS DE LA TARJETA */
+.sm-card-details {
+  padding-right: 60px; /* Margen para no chocar con la etiqueta superior */
+}
+
+.sm-card-details h4 {
+  font-family: var(--font-title, serif);
+  font-size: 1.15rem;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.sm-card-details p {
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.9rem;
+  color: var(--text-light, #666666);
+  margin: 0;
+  line-height: 1.4;
+}
+/* Ajuste cuando el cuadro del logo usa un icono de Lucide */
+.sm-card-logo.icon-mode {
+  background: #fbf1ec; /* Fondo terracotta suave */
+  border: 1px solid rgba(217, 130, 91, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================================================
+   RESPONSIVE / MÓVIL (SOBRE MÍ)
+=================================================== */
+@media (max-width: 900px) {
+  .story-container {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* --- HERO EN MÓVIL --- */
+  .sobremi-hero-container-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 20px 15px 100px 15px !important;
+  }
+
+  .sobremi-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .sobremi-hero-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .sobremi-btn-hero {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    max-width: 320px !important;
+    padding: 16px 25px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 10px 25px rgba(217, 130, 91, 0.5) !important;
+  }
+
+  /* --- HISTORIA / BIOGRAFÍA EN MÓVIL --- */
+  .about-story-section {
+    padding: 50px 0 0 0 !important;
+  }
+
+  .story-text {
+    padding: 0 6% 40px 6% !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .story-text h2 {
+    text-align: center;
+    font-size: 2rem !important;
+  }
+
+  .story-carousel-box {
+    position: relative !important;
+    width: 100% !important;
+    height: 350px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 35%) !important;
+  }
+
+  .carousel-dots {
+    top: auto !important;
+    bottom: 20px !important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+  }
+
+  /* --- SECCIÓN TRAYECTORIA EN MÓVIL --- */
+  .sm-trayectoria-section {
+    padding: 50px 15px !important;
+  }
+
+  .sm-main-header h2 {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+  }
+
+  .sm-main-header p {
+    text-align: center !important;
+  }
+
+  .sm-block-title {
+    font-size: 1.4rem !important;
+    text-align: center !important;
+  }
+
+  /* MANTENER LAS 2 COLUMNAS EN MÓVIL PARA LA TRAYECTORIA */
+  .sm-cards-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 columnas exactas */
+    gap: 12px !important;
+    align-items: stretch !important; /* Obliga a que todas tengan la misma altura en la fila */
+  }
+
+  /* Tarjetas igualadas y alineadas en móvil */
+  .sm-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 38px 12px 14px 12px !important; /* Espacio arriba para el badge */
+    height: 100% !important; /* Forzar misma altura */
+    box-sizing: border-box !important;
+    gap: 10px !important;
+  }
+
+.sm-cards-grid > .sm-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1 !important;
+  justify-self: center !important;
+  width: 100% !important;
+  max-width: 48% !important; /* Mantiene el tamaño exacto de una columna de arriba */
+}
+
+  .sm-card-logo {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    padding: 4px !important;
+  }
+
+  .sm-card-details {
+    padding-right: 0 !important;
+  }
+
+  .sm-card-details h4 {
+    font-size: 0.95rem !important;
+  }
+
+  .sm-card-details p {
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .sm-badge-year {
+    top: 10px !important;
+    right: 10px !important;
+    font-size: 0.65rem !important;
+    padding: 2px 8px !important;
+  }
+}

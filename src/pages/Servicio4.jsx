@@ -1,0 +1,135 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import "./Servicio4.css";
+import heroImg from "../assets/imagenes-servicio4/hero-servicio4.jpg";
+import imgServicio1 from "../assets/imagenes-servicio4/imagen-1.jpg";
+import imgServicio2 from "../assets/imagenes-servicio4/imagen-2.jpg";
+import imgServicio3 from "../assets/imagenes-servicio4/imagen-3.jpg";
+
+function Servicio4() {
+  const secciones = [
+    {
+      num: "01.",
+      titulo: "ATENCIÓN EN EL HOGAR",
+      items: [
+        "Evaluación logopédica inicial en un entorno familiar y cercano.",
+        "Mayor comodidad para pacientes con movilidad reducida o agendas ajustadas.",
+        "Menor nivel de estrés y ansiedad al encontrarse en un espacio conocido."
+      ],
+      imgUrl: imgServicio1,
+      alt: "Terapia logopédica a domicilio"
+    },
+    {
+      num: "02.",
+      titulo: "FASE DE INTERVENCIÓN",
+      items: [
+        "Sesiones individualizadas enfocadas en objetivos reales del día a día.",
+        "Uso de objetos y espacios cotidianos para potenciar el aprendizaje funcional.",
+        "Orientación directa a la familia durante todo el proceso terapéutico."
+      ],
+      imgUrl: imgServicio2,
+      alt: "Intervención en casa"
+    },
+    {
+      num: "03.",
+      titulo: "COMODIDAD Y CONFIANZA",
+      items: [
+        "Desplazamiento directo a tu domicilio sin preocupaciones de tráfico o esperas.",
+        "Ambiente óptimo y relajado para los más pequeños o adultos mayores.",
+        "Adaptación total de la sesión a las rutinas diarias del paciente."
+      ],
+      imgUrl: imgServicio3,
+      alt: "Comodidad en logopedia a domicilio"
+    }
+  ];
+
+  return (
+    <div className="srv4-page-wrapper">
+      {/* 1. HERO SECTION */}
+      <section 
+        className="srv4-hero"
+        style={{ backgroundImage: `url(${heroImg})` }}
+      >
+        <div className="srv4-hero-container-inner">
+          <div className="srv4-hero-content">
+            <span className="srv4-hero-subtitle">MODALIDAD PRESENCIAL EN CASA · Jenny Moscol</span>
+            <h1>
+              Logopedia a Domicilio
+            </h1>
+            <p>
+              Llevo la terapia directamente a tu entorno habitual, ofreciendo una atención totalmente personalizada para facilitar la comodidad y la adaptación al hogar.
+            </p>
+            <div className="srv4-hero-buttons">
+              <a href="#contacto" className="srv4-btn-hero">
+                Agendar Cita a Domicilio
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. WAVE DIVIDER (3 CAPAS) */}
+      <div className="srv4-wave-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path
+            className="srv4-wave-back"
+            d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,149.3C672,149,768,203,864,218.7C960,235,1056,213,1152,192C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+          <path
+            className="srv4-wave-mid"
+            d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,192C672,192,768,160,864,160C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+          <path
+            className="srv4-wave-front"
+            d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,208C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      {/* 3. SECCIÓN PRINCIPAL: BLOQUES EN ZIG-ZAG */}
+      <section className="srv4-main-container">
+        <div className="srv4-grid-list">
+          {secciones.map((sec, idx) => (
+            <div 
+              key={idx} 
+              className={`srv4-block-row ${idx % 2 !== 0 ? "reverse" : ""}`}
+            >
+              <div className="srv4-info-col">
+                <div className="srv4-title-group">
+                  <span className="srv4-num">{sec.num}</span>
+                  <h2>{sec.titulo}</h2>
+                </div>
+                <ul className="srv4-items-list">
+                  {sec.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="srv4-img-col">
+                {sec.imgUrl ? (
+                  <img src={sec.imgUrl} alt={sec.alt} />
+                ) : (
+                  <div className="srv4-placeholder">
+                    <span>📷 Coloca aquí tu foto para {sec.titulo.toLowerCase()}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* BOTÓN DE CONTACTO AL FINAL */}
+        <div className="srv4-action-footer" id="contacto">
+          <p>¿Te interesa recibir atención logopédica directamente en casa?</p>
+          <a href="/contacto" className="srv4-btn-contact">
+            Contáctame
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Servicio4;

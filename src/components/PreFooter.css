@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.pre-footer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #3b3e45 !important;
+  padding: 30px 40px;
+  margin: 0;
+}
+
+.pre-footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* BLOQUE GENERAL DE LA MARCA (IMAGEN + TEXTO) */
+.pre-footer-brand {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    /* Centra perfectamente la imagen y el texto en un eje común */
+  text-align: center;
+  gap: 5px;               /* Espacio limpio y controlado sin márgenes negativos raros */
+  margin-left: 60px;      /* Distancia desde el borde izquierdo */
+}
+
+/* IMAGEN DEL LOGO */
+.brand-logo-img {
+  height: 200px; 
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* CONTENEDOR DE TEXTO */
+.brand-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.brand-title {
+  margin: 0;
+  font-family: 'Parisienne', cursive;
+  font-size: 38px;        
+  font-weight: 400;
+  color: #ffffff !important;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.brand-subtitle {
+  display: block;
+  font-size: 13px;        
+  font-weight: 300;
+  color: #ffffff !important;
+  letter-spacing: 6px;    
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+/* REDES SOCIALES */
+.pre-footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.socials-title {
+  font-size: 0.82rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Colores corporativos de cada red */
+.icon-fb { background-color: #4267b2; } 
+.icon-ig { background-color: #e1306c; } 
+.icon-yt { background-color: #ff0000; } 
+.icon-tk { background-color: #000000; } 
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+  .pre-footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pre-footer-brand {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .pre-footer-socials {
+    align-items: center;
+    margin-right: 0;
+  }
+}
