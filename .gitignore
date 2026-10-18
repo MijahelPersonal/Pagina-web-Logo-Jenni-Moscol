@@ -24,3 +24,12 @@ dist-ssr
 *.sw?
 
 .vercel
+.astro/
+.env
+.env.*
+!.env.example
+output/ai-originals/
+output/assets-audit/
+
+.astro/
+.env

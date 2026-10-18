@@ -1,6 +1,7 @@
 import React from "react";
 import "./PreFooter.css";
-import logoJenny from "../assets/imagenes-prefooter/logo-jenny2.png";
+import logoJennyAsset from "../assets/imagenes-prefooter/logo-jenny2.png";
+const logoJenny = logoJennyAsset.src;
 
 const PreFooter = () => {
   return (

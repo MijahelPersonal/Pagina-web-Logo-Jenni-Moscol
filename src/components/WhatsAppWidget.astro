@@ -1,0 +1,27 @@
+---
+import './WhatsAppWidget.css';
+---
+<aside class="whatsapp-widget-container" aria-label="Contacto por WhatsApp">
+  <div id="whatsapp-chat" class="whatsapp-chat-box" hidden>
+    <div class="whatsapp-chat-header"><span>El WhatsApp de Jenny</span><button type="button" class="whatsapp-close-btn" aria-label="Cerrar WhatsApp">×</button></div>
+    <div class="whatsapp-chat-body">
+      <div class="whatsapp-message-bubble"><p>¡Hola!<br/>¿En qué puedo ayudarte?</p></div>
+      <a href="https://wa.me/34632241367?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" class="whatsapp-send-btn">Abrir conversación ↗</a>
+    </div>
+  </div>
+  <button type="button" class="whatsapp-floating-button" aria-label="Abrir WhatsApp" aria-expanded="false" aria-controls="whatsapp-chat">
+    <svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M27 15a11 11 0 0 1-16 10L5 27l2-6A11 11 0 1 1 27 15Z"/><path d="M11 10c0 6 5 11 11 11l1-4-4-1-1 2c-3-1-4-3-5-5l2-1-1-3-3 1Z"/></svg>
+  </button>
+</aside>
+<style>.whatsapp-chat-box[hidden]{display:none}.whatsapp-chat-box{width:min(350px,calc(100vw - 40px))}.whatsapp-send-btn{background:#147b3b;color:#fff}</style>
+<script>
+const widget = document.querySelector('.whatsapp-widget-container');
+const trigger = widget?.querySelector('.whatsapp-floating-button');
+const panel = widget?.querySelector('#whatsapp-chat');
+const close = widget?.querySelector('.whatsapp-close-btn');
+function toggle(open) { panel?.toggleAttribute('hidden', !open); trigger?.setAttribute('aria-expanded', String(open)); trigger?.setAttribute('aria-label', open ? 'Cerrar WhatsApp' : 'Abrir WhatsApp'); if (open) close?.focus(); else trigger?.focus(); }
+trigger?.addEventListener('click', () => toggle(trigger.getAttribute('aria-expanded') !== 'true'));
+close?.addEventListener('click', () => toggle(false));
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && trigger?.getAttribute('aria-expanded') === 'true') toggle(false); });
+document.addEventListener('click', (event) => { if (trigger?.getAttribute('aria-expanded') === 'true' && event.target instanceof Node && !widget?.contains(event.target)) toggle(false); });
+</script>

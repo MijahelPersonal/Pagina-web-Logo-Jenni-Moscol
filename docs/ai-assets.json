@@ -1,0 +1,302 @@
+[
+  {
+    "original": "src/assets/imagenes-blog/Blog-1.jpg",
+    "generated": "output/ai-originals/blog-Blog-1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/blog-Blog-1.webp",
+    "dimensions": {
+      "width": 1023,
+      "height": 1538
+    }
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-2.jpg",
+    "generated": "output/ai-originals/blog-Blog-2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/blog-Blog-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1018
+    }
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-3.jpg",
+    "generated": "output/ai-originals/blog-Blog-3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/blog-Blog-3.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    }
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-4.jpg",
+    "generated": "output/ai-originals/blog-Blog-4.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/blog-Blog-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-1.jpg",
+    "generated": "output/ai-originals/contacto-imagen-1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 992
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-2.jpg",
+    "generated": "output/ai-originals/contacto-imagen-2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-2.webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-3.png",
+    "generated": "output/ai-originals/contacto-imagen-3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 797
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-4.jpg",
+    "generated": "output/ai-originals/contacto-imagen-4.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-5.jpg",
+    "generated": "output/ai-originals/contacto-imagen-5.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-5.webp",
+    "dimensions": {
+      "width": 1521,
+      "height": 1034
+    }
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-6.jpg",
+    "generated": "output/ai-originals/contacto-imagen-6.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/contacto-imagen-6.webp",
+    "dimensions": {
+      "width": 1535,
+      "height": 1025
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card1.jpg",
+    "generated": "output/ai-originals/inicio-card1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-card1.webp",
+    "dimensions": {
+      "width": 941,
+      "height": 1672
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card2.jpg",
+    "generated": "output/ai-originals/inicio-card2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-card2.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card3.jpg",
+    "generated": "output/ai-originals/inicio-card3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-card3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card4.jpg",
+    "generated": "output/ai-originals/inicio-card4.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-card4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 921
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/hero-logopeda.jpg",
+    "generated": "output/ai-originals/inicio-hero-logopeda.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-hero-logopeda.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-1.jpg",
+    "generated": "output/ai-originals/inicio-imagen-1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1017
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-2.jpg",
+    "generated": "output/ai-originals/inicio-imagen-2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-3.jpg",
+    "generated": "output/ai-originals/inicio-imagen-3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-4.jpg",
+    "generated": "output/ai-originals/inicio-imagen-4.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-imagen-4.webp",
+    "dimensions": {
+      "width": 1526,
+      "height": 1031
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-5.jpg",
+    "generated": "output/ai-originals/inicio-imagen-5.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-imagen-5.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/terapia1.jpg",
+    "generated": "output/ai-originals/inicio-terapia1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-terapia1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/terapia2.jpg",
+    "generated": "output/ai-originals/inicio-terapia2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-terapia2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-inicio/terapia3.jpg",
+    "generated": "output/ai-originals/inicio-terapia3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/inicio-terapia3.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    }
+  },
+  {
+    "original": "src/assets/imagenes-metodologia/hero-metodologias.jpg",
+    "generated": "output/ai-originals/metodologia-hero-metodologias.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/metodologia-hero-metodologias.webp",
+    "dimensions": {
+      "width": 1535,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-metodologia/imagen-1.jpg",
+    "generated": "output/ai-originals/metodologia-imagen-1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/metodologia-imagen-1.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    }
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/hero-servicio1.jpg",
+    "generated": "output/ai-originals/servicio1-hero-servicio1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/servicio1-hero-servicio1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-1.jpg",
+    "generated": "output/ai-originals/servicio1-imagen-1.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/servicio1-imagen-1.webp",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-2.png",
+    "generated": "output/ai-originals/servicio1-imagen-2.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/servicio1-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-3.jpg",
+    "generated": "output/ai-originals/servicio1-imagen-3.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/servicio1-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 863
+    }
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-4.jpg",
+    "generated": "output/ai-originals/servicio1-imagen-4.png",
+    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "served": "/media/servicio1-imagen-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    }
+  }
+]

@@ -1,0 +1,48 @@
+---
+const steps = [
+  { title: 'Te escuchamos', description: 'Nos tomamos el tiempo para conocer tu historia, tus necesidades y lo que quieres conseguir.' },
+  { title: 'Diseñamos tu terapia', description: 'Trazamos un camino personal, con actividades y objetivos adaptados a tu ritmo.' },
+  { title: 'Avanzamos contigo', description: 'Celebramos cada pequeño logro y ajustamos el camino para seguir creciendo juntos.' },
+];
+---
+<section class="work-process" data-particle-process aria-labelledby="work-process-title">
+  <div class="process-heading">
+    <span class="process-eyebrow">Un camino compartido</span>
+    <h2 id="work-process-title">Cada voz tiene su propio ritmo</h2>
+    <p>La terapia empieza por conocernos. Así damos forma a tu proceso, paso a paso.</p>
+  </div>
+  <div class="process-layout">
+    <div class="process-art" aria-hidden="true">
+      <div class="process-canvas"></div>
+      <svg class="process-fallback" viewBox="0 0 240 240" fill="none">
+        <circle cx="120" cy="120" r="102" stroke="currentColor" stroke-opacity=".15" />
+        <path data-symbol="0" d="M55 65h130v90H105l-35 28v-28H55V65Z M80 99h80 M80 121h54" />
+        <path data-symbol="1" hidden d="M65 170V70h45v45h65v55H65Z M110 70h65v45 M88 147h64" />
+        <path data-symbol="2" hidden d="M120 181V100 M120 139C74 144 59 110 62 80c36-3 63 16 58 59Z M120 117c-4-40 23-65 60-61 3 35-20 65-60 61Z" />
+      </svg>
+      <span class="process-art-caption">Escuchar · Acompañar · Crecer</span>
+    </div>
+    <div class="process-steps" aria-label="Pasos de la terapia">
+      {steps.map((step, index) => (
+        <button type="button" class="process-step" data-process-step={index} aria-pressed={index === 0 ? 'true' : 'false'}>
+          <span class="process-number">0{index + 1}</span>
+          <span><strong>{step.title}</strong><span class="process-description">{step.description}</span></span>
+          <span class="process-arrow" aria-hidden="true">↗</span>
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
+<script>
+  import { initParticleProcesses } from '../scripts/particles.js';
+  initParticleProcesses();
+  document.addEventListener('astro:page-load', initParticleProcesses);
+</script>
+<style>
+  .work-process{padding:clamp(4rem,8vw,7rem) max(5%,calc((100% - 1180px)/2));background:#faf8f5;color:#392e29}
+  .process-heading{max-width:660px;margin-bottom:2.5rem}.process-eyebrow{color:#a45437;font-size:.75rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase}.process-heading h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;margin:1rem 0}.process-heading p{line-height:1.8;color:#6b5c53}
+  .process-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2rem,6vw,5rem);align-items:center}.process-art{position:relative;aspect-ratio:1;max-width:460px;width:100%;background:radial-gradient(ellipse,#edd6c5 0%,#f4e9df 45%,transparent 72%);color:#b65f3c}.process-canvas{position:absolute;inset:0}.process-canvas :global(canvas){display:block;width:100%;height:100%}.process-fallback{position:absolute;width:70%;height:70%;left:15%;top:10%;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.process-fallback [hidden]{display:none}.process-art[data-ready] .process-fallback{display:none}.process-art-caption{position:absolute;bottom:7%;left:0;right:0;text-align:center;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#8c6752}
+  .process-steps{display:grid;gap:.8rem}.process-step{font:inherit;width:100%;display:flex;align-items:flex-start;gap:1.1rem;padding:1.5rem;text-align:left;border:1px solid #dfd3c9;border-radius:18px;background:transparent;color:inherit;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}.process-step[aria-pressed=true]{background:#fffdf9;border-color:#c67b58;box-shadow:0 8px 30px #66432308}.process-step:hover{transform:translateY(-2px)}.process-step:focus-visible{outline:3px solid #a45437;outline-offset:4px}.process-number{font-size:.75rem;color:#a45437;margin-top:.25rem}.process-step strong{display:block;font-size:1.1rem;font-weight:600}.process-description{display:block;margin-top:.55rem;color:#6b5c53;font-size:.9rem;line-height:1.7}.process-arrow{margin-left:auto;color:#a45437}
+  @media(max-width:700px){.process-layout{grid-template-columns:1fr;gap:.5rem}.process-art{max-width:300px;margin:auto}.process-step{padding:1.2rem}.process-heading{margin-bottom:.5rem}}
+  @media(prefers-reduced-motion:reduce){.process-step{transition:none}.process-step:hover{transform:none}}
+</style>
