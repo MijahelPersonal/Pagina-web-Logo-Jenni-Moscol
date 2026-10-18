@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BaseLayout.astro';
-import View from '../views/Contacto.jsx';
+import View from '../views/Contacto.astro';
 ---
-<Layout title="Contacto · Jenny Moscol"><View client:visible/></Layout>
+<Layout><View/></Layout>
+<script>import '../scripts/original-contact.js';</script>

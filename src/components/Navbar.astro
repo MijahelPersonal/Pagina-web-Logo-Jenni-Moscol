@@ -1,31 +1,109 @@
 ---
-import '../components/Navbar.css';
-import logoBlanco from '../assets/imagenes-navbar/logo-jenny-blanco.png';
-import logoOscuro from '../assets/imagenes-navbar/logo-jenny-oscuro.png';
-const current = decodeURI(Astro.url.pathname).replace(/\/$/, '') || '/';
-const links = [['/', 'INICIO'], ['/sobre-mi', 'SOBRE MÍ'], ['/metodologia', 'METODOLOGÍA'], ['/blog', 'BLOG'], ['/contacto', 'CONTACTO']];
-const services = [['logopedia-infantil', 'LOGOPEDIA INFANTIL'], ['logopedia-jovenes-y-adultos', 'JÓVENES Y ADULTOS'], ['logopedia-online', 'LOGOPEDIA ONLINE'], ['logopedia-a-domicilio', 'A DOMICILIO']];
+import logoBlancoAsset from '../assets/imagenes-navbar/logo-jenny-blanco.png';
+const logoBlanco = logoBlancoAsset.src;
+import logoOscuroAsset from '../assets/imagenes-navbar/logo-jenny-oscuro.png';
+const logoOscuro = logoOscuroAsset.src;
+const scrolled = false, menuOpen = false;
 ---
-<div class="topbar"><div class="topbar-left"><span><a href="tel:+34632241367">+34 632 24 13 67</a></span><span><a href="mailto:contacto.jennymoscol@gmail.com">contacto.jennymoscol@gmail.com</a></span></div><div class="topbar-right"><span>ES</span></div></div>
-<header class="navbar" id="site-header"><nav class="nav-container" aria-label="Navegación principal">
-  <div class="logo"><a href="/" class="logo-link"><img src={logoBlanco.src} alt="" class="logo-img logo-blanco" width="80" height="80"/><img src={logoOscuro.src} alt="" class="logo-img logo-oscuro" width="80" height="80"/><div class="logo-text"><h2>Jenny Moscol</h2><span>LOGOPEDA</span></div></a></div>
-  <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
-  <ul class="nav-links" id="main-navigation">
-    {links.slice(0,2).map(([href,label]) => <li><a href={href} class:list={{active:current===href}} aria-current={current===href?'page':undefined}>{label}</a></li>)}
-    <li class="nav-item-dropdown"><button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="service-navigation">SERVICIOS <span>▾</span></button><ul class="dropdown-menu" id="service-navigation" hidden>{services.map(([slug,label])=><li><a href={`/servicios/${slug}`}>{label}</a></li>)}</ul></li>
-    {links.slice(2).map(([href,label]) => <li><a href={href} class:list={{active:current===href}} aria-current={current===href?'page':undefined}>{label}</a></li>)}
-  </ul>
-</nav></header>
-<style>.topbar a { color: inherit; text-decoration: none; } .dropdown-menu[hidden] { display: none !important; }</style>
-<script>
-const header=document.querySelector('#site-header');
-const menu=document.querySelector('.menu-toggle');
-const links=document.querySelector('#main-navigation');
-const dropdown=document.querySelector('.nav-dropdown-toggle');
-const submenu=document.querySelector('#service-navigation');
-const update=()=>header?.classList.toggle('scrolled',window.scrollY>20);
-update();window.addEventListener('scroll',update,{passive:true});
-menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.classList.toggle('active',open);links?.classList.toggle('active',open);});
-dropdown?.addEventListener('click',()=>{const open=dropdown.getAttribute('aria-expanded')!=='true';dropdown.setAttribute('aria-expanded',String(open));submenu?.toggleAttribute('hidden',!open);});
-document.addEventListener('keydown',event=>{if(event.key==='Escape'){menu?.setAttribute('aria-expanded','false');menu?.classList.remove('active');links?.classList.remove('active');dropdown?.setAttribute('aria-expanded','false');submenu?.setAttribute('hidden','');}});
-</script>
+
+      <div class="topbar">
+        <div class="topbar-left">
+          <span> +34 632 24 13 67</span>
+          <span> contacto.jennymoscol@gmail.com</span>
+        </div>
+        <div class="topbar-right">
+          <span>ES</span>
+        </div>
+      </div>
+
+      <!-- Se añade dinámicamente la clase 'scrolled' según el estado -->
+      <header class={`navbar ${scrolled ? "scrolled" : ""}`}>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="/" class="logo-link">
+
+              <!-- Logo Blanco (Visible arriba cuando el fondo es oscuro/transparente) -->
+              <img
+                src={logoBlanco}
+                alt="Jenny Moscol Logopeda"
+                class="logo-img logo-blanco"
+              />
+
+              <!-- Logo Oscuro (Visible al bajar cuando el fondo es blanco) -->
+              <img
+                src={logoOscuro}
+                alt="Jenny Moscol Logopeda"
+                class="logo-img logo-oscuro"
+              />
+
+              <div class="logo-text">
+                <h2>Jenny Moscol</h2>
+                <span>LOGOPEDA</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Botón Hamburguesa para Móvil -->
+          <button
+            class={`menu-toggle ${menuOpen ? "active" : ""}`}
+            aria-label="Menú de navegación"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class={`nav-links ${menuOpen ? "active" : ""}`}>
+            <li>
+              <a href="/">INICIO</a>
+            </li>
+            <li>
+              <a href="/sobre-mi">SOBRE MI</a>
+            </li>
+
+            <!-- Menú Desplegable con eventos seguros -->
+            <li
+              class="nav-item-dropdown"
+            >
+              <button
+                class="nav-dropdown-toggle"
+              >
+                SERVICIOS <span>▾</span>
+              </button>
+
+                <ul hidden data-original-dropdown class="dropdown-menu" style="display:none">
+                  <li>
+                    <a href="/servicios/logopedia infantil">
+                      LOGOPEDIA INFANTIL
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/servicios/logopedia jovenes y adultos">
+                      LOGOP. JOVENES Y ADULTOS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/servicios/logopedia online">
+                      LOGOPEDIA ONLINE
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/servicios/logopedia a domicilio">
+                      LOGOPEDIA A DOMICILIO
+                    </a>
+                  </li>
+                </ul>
+            </li>
+
+            <li>
+              <a href="/metodologia">METODOLOGIA</a>
+            </li>
+            <li>
+              <a href="/blog">BLOG</a>
+            </li>
+            <li>
+              <a href="/contacto">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </header>

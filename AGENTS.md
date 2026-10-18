@@ -5,5 +5,6 @@
 - After each coherent implementation phase, run the relevant checks, stage the project changes, commit, and push to `origin/main`. The user explicitly requested this workflow. Report the commit hash and push result in Spanish.
 - Preserve unrelated changes that existed before the task; do not include local Obsidian workspace changes in implementation commits.
 - Never commit server credentials, `.env` files, or raw generated image outputs. `.env.example` is safe to track.
-- Keep informational routes static. Hydrate React only where interaction requires it; load Three.js and GSAP on demand and respect reduced motion and visibility.
-- Preserve the verified-email flow: a fabricated address must not deliver a consultation without the code received at that address.
+- This is a migration only: use native Astro templates and browser JavaScript, with no React dependency, JSX renderer, hydration, or React integration.
+- Preserve the original design, content, CSS, photos, routes, form providers and interactions from commit `ae38a18`. Do not redesign, generate replacement photos, add animations, or change form logic unless explicitly requested.
+- Tailwind, GSAP and Three.js may remain installed; installing them is not authorization to introduce new visual effects or features.

@@ -1,0 +1,222 @@
+---
+import Icon from '../components/Icon.astro';
+import HeroContactoAsset from '../assets/imagenes-contacto/imagen-1.jpg';
+const HeroContacto = HeroContactoAsset.src;
+import card1Asset from '../assets/imagenes-contacto/imagen-4.jpg';
+const card1 = card1Asset.src;
+import card2Asset from '../assets/imagenes-contacto/imagen-2.jpg';
+const card2 = card2Asset.src;
+import card3Asset from '../assets/imagenes-contacto/imagen-3.png';
+const card3 = card3Asset.src;
+import card4Asset from '../assets/imagenes-contacto/imagen-5.jpg';
+const card4 = card4Asset.src;
+import imgforAsset from '../assets/imagenes-contacto/imagen-6.jpg';
+const imgfor = imgforAsset.src;
+const cargando = false;
+---
+<main class="contacto-page">
+
+      <!-- 1. HERO -->
+      <section class="contacto-hero" style={{ 'background-image': `url(${HeroContacto})` }}>
+        <div class="contacto-hero-content">
+          <span class="contacto-etiqueta">
+            Prevención · Evaluación · Rehabilitación · Estrategias
+          </span>
+          <h1>Estamos contigo</h1>
+          <p>
+            Un espacio de escucha y orientación profesional para evaluar, cuidar y potenciar la comunicación de tu familia.
+          </p>
+          <div class="contacto-hero-buttons">
+            <a href="#contacto-formulario" class="btn-hero-contacto">
+              Agendar consulta
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. WAVE DIVIDER -->
+      <div class="wave-divider-contacto">
+        <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+          <path class="wave-back" d="M0,100 C320,180 800,20 1440,120 L1440,200 L0,200 Z" />
+          <path class="wave-mid" d="M0,40 C480,160 960,-10 1440,80 L1440,200 L0,200 Z" />
+          <path class="wave-front" d="M0,110 C360,20 1080,180 1440,60 L1440,200 L0,200 Z" />
+        </svg>
+      </div>
+
+      <!-- 3. HISTORIA -->
+      <section class="contacto-historia">
+        <div class="historia-texto">
+          <h2>Un acompañamiento pensado para cada familia</h2>
+          <p>
+            Sé que cuando una familia busca apoyo pueden aparecer muchas preguntas, dudas e incluso miedo por no saber cómo actuar.
+          </p>
+          <p>
+            Como profesional y como madre, entiendo que detrás de cada consulta existe una persona que necesita sentirse escuchada y acompañada.
+          </p>
+          <p>
+            Mi objetivo es brindar un espacio seguro donde niños, adultos y familias encuentren estrategias adaptadas a sus necesidades.
+          </p>
+        </div>
+
+        <div class="historia-cards">
+          <article class="historia-card">
+            <img src={card1} alt="Apoyo familiar" class="historia-card-bg" />
+            <div class="historia-card-overlay"></div>
+            <div class="historia-card-content">
+              <h3>Apoyo familiar</h3>
+              <p>Orientación para madres, padres y familiares.</p>
+            </div>
+          </article>
+
+          <article class="historia-card">
+            <img src={card2} alt="Niños en terapia" class="historia-card-bg" />
+            <div class="historia-card-overlay"></div>
+            <div class="historia-card-content">
+              <h3>Niños</h3>
+              <p>Apoyo en lenguaje, comunicación y desarrollo.</p>
+            </div>
+          </article>
+
+          <article class="historia-card">
+            <img src={card3} alt="Adultos y mayores" class="historia-card-bg" />
+            <div class="historia-card-overlay"></div>
+            <div class="historia-card-content">
+              <h3>Adultos y mayores</h3>
+              <p>Atención para fortalecer voz, habla y comunicación.</p>
+            </div>
+          </article>
+
+          <article class="historia-card">
+            <img src={card4} alt="Formación a profesionales" class="historia-card-bg" />
+            <div class="historia-card-overlay"></div>
+            <div class="historia-card-content">
+              <h3>Formación a Profesionales</h3>
+              <p>Asesoría y pautas prácticas 1 a 1 para docentes y terapeutas</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. FORMULARIO CON VALIDACIÓN DE ABSTRACT API -->
+      <section class="met-about" id="contacto-formulario">
+        <div class="met-about-content-wrapper">
+
+          <div class="met-about-text">
+            <span class="met-about-subtitle">CONTACTO DIRECTO</span>
+            <h2>Cuéntame cómo puedo ayudarte</h2>
+            <p class="met-about-paragraph-main">
+              Escríbeme tu situación sin compromiso. Encontraré la mejor manera de orientarte a ti y a tu familia.
+            </p>
+
+            <div hidden data-original-success class="mensaje-exito-card">
+                <div class="exito-icon-wrapper">
+                  <Icon name="Send" class="exito-icon" size={32} />
+                </div>
+                <h3>¡Mensaje enviado con éxito!</h3>
+                <p>
+                  Gracias por contactarme. He recibido tu consulta correctamente y te responderé en breve.
+                </p>
+              </div>
+<form data-original-form class="formulario-body">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <div class="input-with-icon">
+                      <Icon name="User" class="input-icon" />
+                      <input
+                        id="nombre"
+                        type="text"
+                        name="nombre"
+                        placeholder="Ej. Jenny"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <div class="input-with-icon">
+                      <Icon name="AtSign" class="input-icon" />
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="ejemplo@correo.com"
+                        required
+                      />
+                    </div>
+                    <span data-original-email-error class="error-email-real" style={{ color: "#d32f2f", 'font-size': "13px", 'margin-top': "5px", display: "none" }}>
+
+                      </span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mensaje">¿En qué puedo ayudarte?</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Cuéntame qué necesitas o qué consulta tienes..."
+                    required
+                  />
+                </div>
+
+                <div class="contacto-check">
+                  <input
+                    type="checkbox"
+                    id="politica"
+                    name="politica"
+                    required
+                  />
+                  <label for="politica">
+                    He leído y acepto la <a href="#politica">política de privacidad</a>.
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn-formulario"
+                  disabled={cargando}
+                >
+                  <span>
+                    {cargando ? 'Verificando y enviando...' : 'Enviar mensaje'}
+                  </span>
+                  <Icon name="Send" size={18} />
+                </button>
+              </form>
+          </div>
+
+          <div class="met-about-image-container">
+            <div class="met-about-card-wrapper">
+              <div class="met-about-slider-frame">
+                <img
+                  src={imgfor}
+                  alt="Atención y consulta de logopedia"
+                  class="met-slider-img"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 5. POLÍTICA DE PRIVACIDAD -->
+      <section class="contacto-privacidad">
+        <div class="privacidad-container">
+          <h2>Política de Privacidad y Protección de Datos</h2>
+          <p>
+            En cumplimiento de la normativa de protección de datos, te informamos que los
+            datos de carácter personal que nos proporciones a través de este formulario serán
+            tratados de manera confidencial y responsable.
+          </p>
+          <div class="privacidad-links">
+            <a href="/politica-de-privacidad" class="link-privacidad">
+              Leer política de privacidad completa →
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>

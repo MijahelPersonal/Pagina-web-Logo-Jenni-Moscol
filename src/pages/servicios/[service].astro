@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/BaseLayout.astro';
+import Servicio1 from '../../views/Servicio1.astro';
+import Servicio2 from '../../views/Servicio2.astro';
+import Servicio3 from '../../views/Servicio3.astro';
+import Servicio4 from '../../views/Servicio4.astro';
+export function getStaticPaths() { return [['logopedia infantil', Servicio1], ['logopedia jovenes y adultos', Servicio2], ['logopedia online', Servicio3], ['logopedia a domicilio', Servicio4]].map(([service, View]) => ({params:{service},props:{View}})); }
+const {View} = Astro.props;
+---
+<Layout><View/></Layout>
