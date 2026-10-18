@@ -5,10 +5,8 @@ const imgServicio1 = '/media/servicio1-imagen-1.webp';
 const imgServicio2 = '/media/servicio1-imagen-2.webp';
 const imgServicio3 = '/media/servicio1-imagen-3.webp';
 const imgServicio4 = '/media/servicio1-imagen-4.webp';
-import imgServicio5Asset from "../assets/imagenes-servicio1/imagen-5.jpg";
-const imgServicio5 = imgServicio5Asset.src;
-import imgServicio6Asset from "../assets/imagenes-servicio1/imagen-6.png";
-const imgServicio6 = imgServicio6Asset.src;
+const imgServicio5 = '/media/servicio1-imagen-5.webp';
+const imgServicio6 = '/media/servicio1-imagen-6.webp';
 
 function Servicio1() {
   const secciones = [

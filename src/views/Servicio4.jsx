@@ -1,13 +1,9 @@
 import React from "react";
 import ServicePage from '../components/ServicePage.jsx';
-import heroImgAsset from "../assets/imagenes-servicio4/hero-servicio4.jpg";
-const heroImg = heroImgAsset.src;
-import imgServicio1Asset from "../assets/imagenes-servicio4/imagen-1.jpg";
-const imgServicio1 = imgServicio1Asset.src;
-import imgServicio2Asset from "../assets/imagenes-servicio4/imagen-2.jpg";
-const imgServicio2 = imgServicio2Asset.src;
-import imgServicio3Asset from "../assets/imagenes-servicio4/imagen-3.jpg";
-const imgServicio3 = imgServicio3Asset.src;
+const heroImg = '/media/servicio4-hero-servicio4.webp';
+const imgServicio1 = '/media/servicio4-imagen-1.webp';
+const imgServicio2 = '/media/servicio4-imagen-2.webp';
+const imgServicio3 = '/media/servicio4-imagen-3.webp';
 
 function Servicio4() {
   const secciones = [

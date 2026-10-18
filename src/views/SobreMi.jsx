@@ -1,3 +1,4 @@
+import { heroStyle } from '../utils/hero-style.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 import { 
   UserCheck,      // Para Atención Privada / Kaen
@@ -7,14 +8,10 @@ import {
   Stethoscope     // Para Naxum Barcelona (Atención clínica)
 } from "lucide-react";
 import "./SobreMi.css";
-import heroImgAsset from "../assets/imagenes-sobremi/imagen-1.jpg";
-const heroImg = heroImgAsset.src;
-import his1Asset from "../assets/imagenes-sobremi/imagen-2.jpg";
-const his1 = his1Asset.src;
-import his2Asset from "../assets/imagenes-sobremi/imagen-3.jpg";
-const his2 = his2Asset.src;
-import his3Asset from "../assets/imagenes-sobremi/imagen-4.jpg";
-const his3 = his3Asset.src;
+const heroImg = '/media/sobremi-imagen-1.webp';
+const his1 = '/media/sobremi-imagen-2.webp';
+const his2 = '/media/sobremi-imagen-3.webp';
+const his3 = '/media/sobremi-imagen-4.webp';
 import for1Asset from "../assets/imagenes-sobremi/FP-1.jpg";
 const for1 = for1Asset.src;
 import for2Asset from "../assets/imagenes-sobremi/FP-2.jpg";
@@ -39,7 +36,7 @@ function SobreMi() {
       {/* ===========================
           CABECERA SOBRE MÍ
       =========================== */}
-      <section className="sobremi-hero" style={{ backgroundImage: `url(${heroImg})` }}>
+      <section className="sobremi-hero" data-responsive-hero="" style={heroStyle(heroImg)}>
         <div className="sobremi-hero-container-inner">
           <div className="sobremi-hero-content">
             <span className="sobremi-hero-subtitle">Tecnóloga Médica & Logopeda</span>

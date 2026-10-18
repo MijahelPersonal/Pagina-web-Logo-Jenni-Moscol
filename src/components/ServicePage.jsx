@@ -1,3 +1,4 @@
+import { heroStyle } from '../utils/hero-style.js';
 import '../views/Servicios.css';
 import ResponsiveImage from './ResponsiveImage.jsx';
 
@@ -7,7 +8,7 @@ export default function ServicePage({heroImg, title, highlight, description, sec
       {/* 1. HERO SECTION ESTILO INICIO CON IMAGEN DE FONDO */}
       <section 
         className="service-hero"
-        style={{ backgroundImage: `url(${heroImg})` }}
+        data-responsive-hero="" style={heroStyle(heroImg)}
       >
         <div className="service-hero-container-inner">
           <div className="service-hero-content">

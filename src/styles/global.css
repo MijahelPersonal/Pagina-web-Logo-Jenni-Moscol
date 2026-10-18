@@ -65,6 +65,8 @@ h1, h2, h3 {
 .hero-content, .sobremi-hero-content, .met-hero-content, .service-hero-content, .contacto-hero-content, .blog-hero-content { animation: hero-enter .65s ease-out both; }
 @keyframes hero-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .image-disclosure { font-size: .75rem; color: #b9b9b9; }
+[data-responsive-hero] { background-image: var(--hero-image); }
+@media (max-width: 768px) { [data-responsive-hero] { background-image: var(--hero-mobile); } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto !important; }
   *, *::before, *::after { animation: none !important; transition: none !important; }

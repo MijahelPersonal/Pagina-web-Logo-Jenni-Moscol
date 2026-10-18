@@ -1,302 +1,850 @@
 [
   {
-    "original": "src/assets/imagenes-blog/Blog-1.jpg",
-    "generated": "output/ai-originals/blog-Blog-1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/blog-Blog-1.webp",
-    "dimensions": {
-      "width": 1023,
-      "height": 1538
-    }
-  },
-  {
-    "original": "src/assets/imagenes-blog/Blog-2.jpg",
-    "generated": "output/ai-originals/blog-Blog-2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/blog-Blog-2.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1018
-    }
-  },
-  {
-    "original": "src/assets/imagenes-blog/Blog-3.jpg",
-    "generated": "output/ai-originals/blog-Blog-3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/blog-Blog-3.webp",
-    "dimensions": {
-      "width": 1024,
-      "height": 1536
-    }
-  },
-  {
-    "original": "src/assets/imagenes-blog/Blog-4.jpg",
-    "generated": "output/ai-originals/blog-Blog-4.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/blog-Blog-4.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1024
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-1.jpg",
-    "generated": "output/ai-originals/contacto-imagen-1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-1.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 992
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-2.jpg",
-    "generated": "output/ai-originals/contacto-imagen-2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-2.webp",
-    "dimensions": {
-      "width": 1122,
-      "height": 1402
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-3.png",
-    "generated": "output/ai-originals/contacto-imagen-3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-3.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 797
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-4.jpg",
-    "generated": "output/ai-originals/contacto-imagen-4.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-4.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1024
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-5.jpg",
-    "generated": "output/ai-originals/contacto-imagen-5.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-5.webp",
-    "dimensions": {
-      "width": 1521,
-      "height": 1034
-    }
-  },
-  {
-    "original": "src/assets/imagenes-contacto/imagen-6.jpg",
-    "generated": "output/ai-originals/contacto-imagen-6.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/contacto-imagen-6.webp",
-    "dimensions": {
-      "width": 1535,
-      "height": 1025
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/card1.jpg",
-    "generated": "output/ai-originals/inicio-card1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-card1.webp",
-    "dimensions": {
-      "width": 941,
-      "height": 1672
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/card2.jpg",
-    "generated": "output/ai-originals/inicio-card2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-card2.webp",
-    "dimensions": {
-      "width": 1024,
-      "height": 1536
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/card3.jpg",
-    "generated": "output/ai-originals/inicio-card3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-card3.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1024
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/card4.jpg",
-    "generated": "output/ai-originals/inicio-card4.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-card4.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 921
-    }
-  },
-  {
     "original": "src/assets/imagenes-inicio/hero-logopeda.jpg",
     "generated": "output/ai-originals/inicio-hero-logopeda.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: speech therapist website hero photograph. Create an original AI photograph inspired by the reference's subject and framing: female speech therapist at left in white blouse holding a red pencil near her chin modelling a mouth sound, smiling young girl with brown pigtails at right facing her, seated at glass desk with a few therapy cards in a bright ivory consultation room. Keep similar broad arrangement and natural candid warmth, invent new people, no copied faces. Crisp realistic details, anatomically plausible hands, soft daylight, warm neutral tones, landscape 3:2. No text, logos, watermark. Deliver a single clean photograph.",
     "served": "/media/inicio-hero-logopeda.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 6000,
+      "height": 4000
+    },
+    "originalBytes": 876946,
+    "servedBytes": 89644
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-1.jpg",
+    "generated": "output/ai-originals/blog-Blog-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Little girl playing outdoors with yellow flower in her hair, joyful natural expression, shallow depth of field. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/blog-Blog-1.webp",
+    "dimensions": {
+      "width": 1023,
+      "height": 1538
+    },
+    "originalDimensions": {
+      "width": 2848,
+      "height": 4288
+    },
+    "originalBytes": 1364566,
+    "servedBytes": 157856
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-4.jpg",
+    "generated": "output/ai-originals/blog-Blog-4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Two women learning with art materials at a community therapy workshop, candid friendly moment. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/blog-Blog-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 5472,
+      "height": 3648
+    },
+    "originalBytes": 1258919,
+    "servedBytes": 98510
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-2.jpg",
+    "generated": "output/ai-originals/blog-Blog-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female clinician listening attentively to an elderly woman in an ivory consultation room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/blog-Blog-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1018
+    },
+    "originalDimensions": {
+      "width": 1200,
+      "height": 793
+    },
+    "originalBytes": 57834,
+    "servedBytes": 108834
+  },
+  {
+    "original": "src/assets/imagenes-blog/Blog-3.jpg",
+    "generated": "output/ai-originals/blog-Blog-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female medical professional in mint scrubs with stethoscope in a bright white room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/blog-Blog-3.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "originalDimensions": {
+      "width": 4480,
+      "height": 6720
+    },
+    "originalBytes": 459799,
+    "servedBytes": 54932
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-1.jpg",
+    "generated": "output/ai-originals/contacto-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female speech therapist and schoolboy doing colourful learning activities at wooden desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 992
+    },
+    "originalDimensions": {
+      "width": 5224,
+      "height": 3376
+    },
+    "originalBytes": 636435,
+    "servedBytes": 135920
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-3.png",
+    "generated": "output/ai-originals/contacto-imagen-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist talking attentively with elderly man at a bright home table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 797
+    },
+    "originalDimensions": {
+      "width": 1419,
+      "height": 736
+    },
+    "originalBytes": 445261,
+    "servedBytes": 103330
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-4.jpg",
+    "generated": "output/ai-originals/contacto-imagen-4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Close-up anonymous doctor in white coat using mobile phone, stethoscope around neck. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 5184,
+      "height": 3456
+    },
+    "originalBytes": 421607,
+    "servedBytes": 55664
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-6.jpg",
+    "generated": "output/ai-originals/contacto-imagen-6.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Smiling female therapist at laptop at bright consultation desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-6.webp",
+    "dimensions": {
+      "width": 1535,
+      "height": 1025
+    },
+    "originalDimensions": {
+      "width": 2048,
+      "height": 1366
+    },
+    "originalBytes": 187035,
+    "servedBytes": 85260
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-2.jpg",
+    "generated": "output/ai-originals/contacto-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Portrait of cheerful young curly auburn-haired boy looking upward outside. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-2.webp",
+    "dimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "originalDimensions": {
+      "width": 3018,
+      "height": 3772
+    },
+    "originalBytes": 512033,
+    "servedBytes": 141540
+  },
+  {
+    "original": "src/assets/imagenes-contacto/imagen-5.jpg",
+    "generated": "output/ai-originals/contacto-imagen-5.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female clinician at desk conducting a video call on laptop, side view. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/contacto-imagen-5.webp",
+    "dimensions": {
+      "width": 1521,
+      "height": 1034
+    },
+    "originalDimensions": {
+      "width": 1200,
+      "height": 816
+    },
+    "originalBytes": 70419,
+    "servedBytes": 91268
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card2.jpg",
+    "generated": "output/ai-originals/inicio-card2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist gently assisting older adult at table during eating therapy, natural non-invasive scene. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-card2.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "originalDimensions": {
+      "width": 3949,
+      "height": 5923
+    },
+    "originalBytes": 771611,
+    "servedBytes": 106238
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card3.jpg",
+    "generated": "output/ai-originals/inicio-card3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Seated female therapist holding notebook listening to a person, cropped consultation scene. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-card3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 6000,
+      "height": 4000
+    },
+    "originalBytes": 1065457,
+    "servedBytes": 126858
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card1.jpg",
+    "generated": "output/ai-originals/inicio-card1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Young child and female therapist using illustrated speech learning cards at desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-card1.webp",
+    "dimensions": {
+      "width": 941,
+      "height": 1672
+    },
+    "originalDimensions": {
+      "width": 2160,
+      "height": 3840
+    },
+    "originalBytes": 335025,
+    "servedBytes": 110918
   },
   {
     "original": "src/assets/imagenes-inicio/imagen-1.jpg",
     "generated": "output/ai-originals/inicio-imagen-1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Friendly older female therapist sitting in colourful child-friendly therapy room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/inicio-imagen-1.webp",
     "dimensions": {
       "width": 1536,
       "height": 1017
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/imagen-2.jpg",
-    "generated": "output/ai-originals/inicio-imagen-2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-imagen-2.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 4928,
+      "height": 3264
+    },
+    "originalBytes": 811052,
+    "servedBytes": 97516
   },
   {
     "original": "src/assets/imagenes-inicio/imagen-3.jpg",
     "generated": "output/ai-originals/inicio-imagen-3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Joyful little girl outdoors with caregiver, candid afternoon daylight. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/inicio-imagen-3.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 3500,
+      "height": 2334
+    },
+    "originalBytes": 306992,
+    "servedBytes": 126470
   },
   {
-    "original": "src/assets/imagenes-inicio/imagen-4.jpg",
-    "generated": "output/ai-originals/inicio-imagen-4.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-imagen-4.webp",
+    "original": "src/assets/imagenes-inicio/imagen-2.jpg",
+    "generated": "output/ai-originals/inicio-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist doing a hand gesture game with young boy at small table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-imagen-2.webp",
     "dimensions": {
-      "width": 1526,
-      "height": 1031
-    }
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 6000,
+      "height": 4000
+    },
+    "originalBytes": 1124225,
+    "servedBytes": 100926
+  },
+  {
+    "original": "src/assets/imagenes-inicio/card4.jpg",
+    "generated": "output/ai-originals/inicio-card4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female speech therapist and little girl with mirror and wooden learning pieces at table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-card4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 921
+    },
+    "originalDimensions": {
+      "width": 750,
+      "height": 450
+    },
+    "originalBytes": 49927,
+    "servedBytes": 116056
   },
   {
     "original": "src/assets/imagenes-inicio/imagen-5.jpg",
     "generated": "output/ai-originals/inicio-imagen-5.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Parents and young child meeting female therapist around table in bright consultation room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/inicio-imagen-5.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 3481,
+      "height": 2320
+    },
+    "originalBytes": 224881,
+    "servedBytes": 97788
+  },
+  {
+    "original": "src/assets/imagenes-inicio/imagen-4.jpg",
+    "generated": "output/ai-originals/inicio-imagen-4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Adult male patient talking to female clinician across desk in consultation office. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-imagen-4.webp",
+    "dimensions": {
+      "width": 1526,
+      "height": 1031
+    },
+    "originalDimensions": {
+      "width": 5532,
+      "height": 3740
+    },
+    "originalBytes": 563726,
+    "servedBytes": 111652
   },
   {
     "original": "src/assets/imagenes-inicio/terapia1.jpg",
     "generated": "output/ai-originals/inicio-terapia1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Overhead view therapist and child using illustrated language cards spread on wooden table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/inicio-terapia1.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
-  },
-  {
-    "original": "src/assets/imagenes-inicio/terapia2.jpg",
-    "generated": "output/ai-originals/inicio-terapia2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/inicio-terapia2.webp",
-    "dimensions": {
-      "width": 1536,
-      "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 6720,
+      "height": 4480
+    },
+    "originalBytes": 1058728,
+    "servedBytes": 127712
   },
   {
     "original": "src/assets/imagenes-inicio/terapia3.jpg",
     "generated": "output/ai-originals/inicio-terapia3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist beside red-haired schoolboy using colourful illustrated learning worksheets. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/inicio-terapia3.webp",
     "dimensions": {
       "width": 1024,
       "height": 1536
-    }
+    },
+    "originalDimensions": {
+      "width": 4000,
+      "height": 6000
+    },
+    "originalBytes": 619396,
+    "servedBytes": 114468
   },
   {
     "original": "src/assets/imagenes-metodologia/hero-metodologias.jpg",
     "generated": "output/ai-originals/metodologia-hero-metodologias.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Woman doing gentle facial articulation exercise with female speech therapist opposite her, bright consultation room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/metodologia-hero-metodologias.webp",
     "dimensions": {
       "width": 1535,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 1000,
+      "height": 667
+    },
+    "originalBytes": 55842,
+    "servedBytes": 104944
   },
   {
-    "original": "src/assets/imagenes-metodologia/imagen-1.jpg",
-    "generated": "output/ai-originals/metodologia-imagen-1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/metodologia-imagen-1.webp",
-    "dimensions": {
-      "width": 1024,
-      "height": 1536
-    }
-  },
-  {
-    "original": "src/assets/imagenes-servicio1/hero-servicio1.jpg",
-    "generated": "output/ai-originals/servicio1-hero-servicio1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/servicio1-hero-servicio1.webp",
+    "original": "src/assets/imagenes-inicio/terapia2.jpg",
+    "generated": "output/ai-originals/inicio-terapia2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist and young child practising speech with cards in light room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/inicio-terapia2.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 6720,
+      "height": 4480
+    },
+    "originalBytes": 1138110,
+    "servedBytes": 111832
   },
   {
     "original": "src/assets/imagenes-servicio1/imagen-1.jpg",
     "generated": "output/ai-originals/servicio1-imagen-1.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist modelling a mouth sound with young boy, colourful letter cards nearby. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/servicio1-imagen-1.webp",
     "dimensions": {
       "width": 1254,
       "height": 1254
-    }
+    },
+    "originalDimensions": {
+      "width": 447,
+      "height": 447
+    },
+    "originalBytes": 23756,
+    "servedBytes": 121266
   },
   {
-    "original": "src/assets/imagenes-servicio1/imagen-2.png",
-    "generated": "output/ai-originals/servicio1-imagen-2.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
-    "served": "/media/servicio1-imagen-2.webp",
+    "original": "src/assets/imagenes-metodologia/imagen-1.jpg",
+    "generated": "output/ai-originals/metodologia-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Approachable female therapist with long light brown hair sitting in bright modern consultation office. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/metodologia-imagen-1.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "originalDimensions": {
+      "width": 2500,
+      "height": 3750
+    },
+    "originalBytes": 696495,
+    "servedBytes": 135818
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/hero-servicio1.jpg",
+    "generated": "output/ai-originals/servicio1-hero-servicio1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Overhead view boy and therapist using playful wooden speech learning board at small table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio1-hero-servicio1.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 1054,
+      "height": 703
+    },
+    "originalBytes": 136729,
+    "servedBytes": 122974
   },
   {
     "original": "src/assets/imagenes-servicio1/imagen-3.jpg",
     "generated": "output/ai-originals/servicio1-imagen-3.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist helping schoolgirl with reading workbook at white desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/servicio1-imagen-3.webp",
     "dimensions": {
       "width": 1536,
       "height": 863
-    }
+    },
+    "originalDimensions": {
+      "width": 950,
+      "height": 534
+    },
+    "originalBytes": 80595,
+    "servedBytes": 94290
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-2.png",
+    "generated": "output/ai-originals/servicio1-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Little girl laughing outdoors lying on soft green grass, warm natural light. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio1-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 768,
+      "height": 512
+    },
+    "originalBytes": 778618,
+    "servedBytes": 253346
   },
   {
     "original": "src/assets/imagenes-servicio1/imagen-4.jpg",
     "generated": "output/ai-originals/servicio1-imagen-4.png",
-    "prompt": "Original AI photograph inspired by the source composition, new fictional people, natural daylight, no logos or text.",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist guiding young boy in gentle mouth articulation exercise, no tools inside mouth. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
     "served": "/media/servicio1-imagen-4.webp",
     "dimensions": {
       "width": 1536,
       "height": 1024
-    }
+    },
+    "originalDimensions": {
+      "width": 678,
+      "height": 452
+    },
+    "originalBytes": 21559,
+    "servedBytes": 99554
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-5.jpg",
+    "generated": "output/ai-originals/servicio1-imagen-5.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Young boy at table looking at healthy food with thoughtful expression, nonjudgmental scene. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio1-imagen-5.webp",
+    "dimensions": {
+      "width": 1499,
+      "height": 1049
+    },
+    "originalDimensions": {
+      "width": 500,
+      "height": 350
+    },
+    "originalBytes": 70413,
+    "servedBytes": 114450
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/hero-servicio2.jpg",
+    "generated": "output/ai-originals/servicio2-hero-servicio2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist and elderly man in a welcoming bright consultation room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-hero-servicio2.webp",
+    "dimensions": {
+      "width": 1484,
+      "height": 1060
+    },
+    "originalDimensions": {
+      "width": 2188,
+      "height": 1563
+    },
+    "originalBytes": 264039,
+    "servedBytes": 129804
+  },
+  {
+    "original": "src/assets/imagenes-servicio1/imagen-6.png",
+    "generated": "output/ai-originals/servicio1-imagen-6.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Little girl in garden making open-mouth singing sound, cheerful natural moment. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio1-imagen-6.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 768,
+      "height": 512
+    },
+    "originalBytes": 371301,
+    "servedBytes": 82760
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-1.jpg",
+    "generated": "output/ai-originals/servicio2-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Mature woman practising vocal exercise with female clinician opposite her at table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 860
+    },
+    "originalDimensions": {
+      "width": 500,
+      "height": 280
+    },
+    "originalBytes": 20709,
+    "servedBytes": 82454
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-3.jpg",
+    "generated": "output/ai-originals/servicio2-imagen-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Young adult woman studying open textbook with notebooks at library desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-3.webp",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "originalDimensions": {
+      "width": 616,
+      "height": 462
+    },
+    "originalBytes": 27145,
+    "servedBytes": 105324
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-2.jpg",
+    "generated": "output/ai-originals/servicio2-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Elderly woman and elderly man reading simple illustrated language cards together at table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 921
+    },
+    "originalDimensions": {
+      "width": 716,
+      "height": 428
+    },
+    "originalBytes": 33213,
+    "servedBytes": 150746
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-4.png",
+    "generated": "output/ai-originals/servicio2-imagen-4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Woman demonstrating tongue movement during speech articulation practice, natural subtle nonmedical portrait. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 768,
+      "height": 512
+    },
+    "originalBytes": 550746,
+    "servedBytes": 109366
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-5.png",
+    "generated": "output/ai-originals/servicio2-imagen-5.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Elderly woman independently eating soup at bright home dining table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-5.webp",
+    "dimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "originalDimensions": {
+      "width": 768,
+      "height": 576
+    },
+    "originalBytes": 637537,
+    "servedBytes": 159140
+  },
+  {
+    "original": "src/assets/imagenes-servicio3/hero-servicio3.jpg",
+    "generated": "output/ai-originals/servicio3-hero-servicio3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Woman on sofa conducting a friendly video consultation on laptop in sunlit living room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio3-hero-servicio3.webp",
+    "dimensions": {
+      "width": 1447,
+      "height": 1087
+    },
+    "originalDimensions": {
+      "width": 1706,
+      "height": 1280
+    },
+    "originalBytes": 150876,
+    "servedBytes": 112204
+  },
+  {
+    "original": "src/assets/imagenes-servicio2/imagen-6.png",
+    "generated": "output/ai-originals/servicio2-imagen-6.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Young man singing into a microphone, profile close-up, dark neutral background. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio2-imagen-6.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 768,
+      "height": 512
+    },
+    "originalBytes": 266277,
+    "servedBytes": 73366
+  },
+  {
+    "original": "src/assets/imagenes-servicio3/imagen-1.jpg",
+    "generated": "output/ai-originals/servicio3-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Mother and toddler attending speech therapy video session at home, cards beside laptop. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio3-imagen-1.webp",
+    "dimensions": {
+      "width": 1451,
+      "height": 1084
+    },
+    "originalDimensions": {
+      "width": 1200,
+      "height": 896
+    },
+    "originalBytes": 93576,
+    "servedBytes": 124312
+  },
+  {
+    "original": "src/assets/imagenes-servicio3/imagen-2.jpg",
+    "generated": "output/ai-originals/servicio3-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Mother and young child doing colourful toy-based therapy activity beside tablet at home. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio3-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 2500,
+      "height": 1667
+    },
+    "originalBytes": 367533,
+    "servedBytes": 148560
+  },
+  {
+    "original": "src/assets/imagenes-servicio4/hero-servicio4.jpg",
+    "generated": "output/ai-originals/servicio4-hero-servicio4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist with notebook talking to young woman on sofa at home. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio4-hero-servicio4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 1600,
+      "height": 1067
+    },
+    "originalBytes": 196149,
+    "servedBytes": 161962
+  },
+  {
+    "original": "src/assets/imagenes-servicio3/imagen-3.jpg",
+    "generated": "output/ai-originals/servicio3-imagen-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Parents and young child meeting female therapist in calm bright clinic. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio3-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 864
+    },
+    "originalDimensions": {
+      "width": 960,
+      "height": 540
+    },
+    "originalBytes": 60211,
+    "servedBytes": 95856
+  },
+  {
+    "original": "src/assets/imagenes-servicio4/imagen-1.jpg",
+    "generated": "output/ai-originals/servicio4-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Parents and child doing a language activity at dining table with therapist at home. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio4-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 1080,
+      "height": 719
+    },
+    "originalBytes": 112732,
+    "servedBytes": 127130
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-1.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-1.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist listening empathetically to adult woman, seated opposite each other in ivory consultation room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-1.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 6720,
+      "height": 4480
+    },
+    "originalBytes": 1074289,
+    "servedBytes": 90762
+  },
+  {
+    "original": "src/assets/imagenes-servicio4/imagen-2.jpg",
+    "generated": "output/ai-originals/servicio4-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Close-up child hands sorting colourful illustrated speech therapy cards at small table. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio4-imagen-2.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 1920,
+      "height": 1280
+    },
+    "originalBytes": 134228,
+    "servedBytes": 86034
+  },
+  {
+    "original": "src/assets/imagenes-servicio4/imagen-3.jpg",
+    "generated": "output/ai-originals/servicio4-imagen-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Female therapist with notebook listening to adult woman on living room sofa. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/servicio4-imagen-3.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 1200,
+      "height": 800
+    },
+    "originalBytes": 112309,
+    "servedBytes": 168566
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-2.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-2.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Approachable female therapist seated in modern warm consultation room, smart casual jacket, fictional illustrative portrait. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-2.webp",
+    "dimensions": {
+      "width": 1025,
+      "height": 1535
+    },
+    "originalDimensions": {
+      "width": 1200,
+      "height": 1798
+    },
+    "originalBytes": 128573,
+    "servedBytes": 103884
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-4.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-4.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Close-up hand pointing at laptop screen during digital consultation, no legible screen text. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-4.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 5184,
+      "height": 3456
+    },
+    "originalBytes": 573478,
+    "servedBytes": 90294
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-3.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-3.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Friendly smiling female professional holding orange folder in warm neutral office, fictional illustrative portrait. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-3.webp",
+    "dimensions": {
+      "width": 1024,
+      "height": 1536
+    },
+    "originalDimensions": {
+      "width": 3744,
+      "height": 5616
+    },
+    "originalBytes": 567790,
+    "servedBytes": 109054
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-5.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-5.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Close-up hands writing in notebook at warm wooden consultation desk. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-5.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 5184,
+      "height": 3456
+    },
+    "originalBytes": 493278,
+    "servedBytes": 80346
+  },
+  {
+    "original": "src/assets/imagenes-sobremi/imagen-6.jpg",
+    "generated": "output/ai-originals/sobremi-imagen-6.png",
+    "prompt": "Use case: photorealistic-natural. Asset type: professional speech therapy website photograph. Primary request: Family reading illustrated picture book together in bright cosy library living room. Input image: reference for composition and subject only; create a new original AI photograph with new fictional people, not an identical face. Preserve the reference's general framing, subject count, orientation and activity. Clear fine details, natural anatomy, gentle candid expressions, warm ivory and muted terracotta setting, soft daylight, editorial photographic realism, no stock-photo plastic skin, no text, no logos, no watermark. Single photograph, no collage.",
+    "served": "/media/sobremi-imagen-6.webp",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "originalDimensions": {
+      "width": 5472,
+      "height": 3648
+    },
+    "originalBytes": 944861,
+    "servedBytes": 144028
   }
 ]

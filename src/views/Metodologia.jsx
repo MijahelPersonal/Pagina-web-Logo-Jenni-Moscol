@@ -1,3 +1,4 @@
+import { heroStyle } from '../utils/hero-style.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 import React from "react";
 import "./Metodologia.css";
@@ -43,7 +44,7 @@ function Metodologia() {
       {/* 1. HERO SECTION */}
       <section 
         className="met-hero" 
-        style={{ backgroundImage: `url(${heroImg})` }}
+        data-responsive-hero="" style={heroStyle(heroImg)}
       >
         <div className="met-hero-container-inner">
           <div className="met-hero-content">

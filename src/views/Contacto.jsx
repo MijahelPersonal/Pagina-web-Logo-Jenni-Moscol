@@ -1,3 +1,4 @@
+import { heroStyle } from '../utils/hero-style.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 import { useState } from "react";
 const HeroContacto = '/media/contacto-imagen-1.webp';
@@ -68,7 +69,7 @@ function Contacto() {
     <main className="contacto-page">
 
       {/* 1. HERO */}
-      <section className="contacto-hero" style={{ backgroundImage: `url(${HeroContacto})` }}>
+      <section className="contacto-hero" data-responsive-hero="" style={heroStyle(HeroContacto)}>
         <div className="contacto-hero-content">
           <span className="contacto-etiqueta">
             Prevención · Evaluación · Rehabilitación · Estrategias

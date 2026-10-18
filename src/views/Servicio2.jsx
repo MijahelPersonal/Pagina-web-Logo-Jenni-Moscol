@@ -2,20 +2,13 @@ import React from "react";
 import ServicePage from '../components/ServicePage.jsx';
 
 // Importación de las 7 imágenes para Servicio 2
-import heroImgAsset from "../assets/imagenes-servicio2/hero-servicio2.jpg";
-const heroImg = heroImgAsset.src;
-import imgServicio1Asset from "../assets/imagenes-servicio2/imagen-1.jpg";
-const imgServicio1 = imgServicio1Asset.src;
-import imgServicio2Asset from "../assets/imagenes-servicio2/imagen-2.jpg";
-const imgServicio2 = imgServicio2Asset.src;
-import imgServicio3Asset from "../assets/imagenes-servicio2/imagen-3.jpg";
-const imgServicio3 = imgServicio3Asset.src;
-import imgServicio4Asset from "../assets/imagenes-servicio2/imagen-4.png";
-const imgServicio4 = imgServicio4Asset.src;
-import imgServicio5Asset from "../assets/imagenes-servicio2/imagen-5.png";
-const imgServicio5 = imgServicio5Asset.src;
-import imgServicio6Asset from "../assets/imagenes-servicio2/imagen-6.png";
-const imgServicio6 = imgServicio6Asset.src;
+const heroImg = '/media/servicio2-hero-servicio2.webp';
+const imgServicio1 = '/media/servicio2-imagen-1.webp';
+const imgServicio2 = '/media/servicio2-imagen-2.webp';
+const imgServicio3 = '/media/servicio2-imagen-3.webp';
+const imgServicio4 = '/media/servicio2-imagen-4.webp';
+const imgServicio5 = '/media/servicio2-imagen-5.webp';
+const imgServicio6 = '/media/servicio2-imagen-6.webp';
 
 function Servicio2() {
   const secciones = [

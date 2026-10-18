@@ -2,14 +2,10 @@ import React from "react";
 import ServicePage from '../components/ServicePage.jsx';
 
 // Importación de imágenes para Servicio 3 (todas .jpg)
-import heroImgAsset from "../assets/imagenes-servicio3/hero-servicio3.jpg";
-const heroImg = heroImgAsset.src;
-import imgServicio1Asset from "../assets/imagenes-servicio3/imagen-1.jpg";
-const imgServicio1 = imgServicio1Asset.src;
-import imgServicio2Asset from "../assets/imagenes-servicio3/imagen-2.jpg";
-const imgServicio2 = imgServicio2Asset.src;
-import imgServicio3Asset from "../assets/imagenes-servicio3/imagen-3.jpg";
-const imgServicio3 = imgServicio3Asset.src;
+const heroImg = '/media/servicio3-hero-servicio3.webp';
+const imgServicio1 = '/media/servicio3-imagen-1.webp';
+const imgServicio2 = '/media/servicio3-imagen-2.webp';
+const imgServicio3 = '/media/servicio3-imagen-3.webp';
 
 function Servicio3() {
   const secciones = [

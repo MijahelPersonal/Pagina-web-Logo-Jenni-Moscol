@@ -1,4 +1,22 @@
 {
+  "/media/inicio-hero-logopeda.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/inicio-hero-logopeda-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/inicio-hero-logopeda-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/inicio-hero-logopeda.webp",
+        "width": 1536
+      }
+    ]
+  },
   "/media/blog-Blog-1.webp": {
     "width": 1023,
     "height": 1538,
@@ -14,6 +32,24 @@
       {
         "src": "/media/blog-Blog-1.webp",
         "width": 1023
+      }
+    ]
+  },
+  "/media/blog-Blog-4.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/blog-Blog-4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/blog-Blog-4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/blog-Blog-4.webp",
+        "width": 1536
       }
     ]
   },
@@ -53,24 +89,6 @@
       }
     ]
   },
-  "/media/blog-Blog-4.webp": {
-    "width": 1536,
-    "height": 1024,
-    "variants": [
-      {
-        "src": "/media/blog-Blog-4-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/blog-Blog-4-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/blog-Blog-4.webp",
-        "width": 1536
-      }
-    ]
-  },
   "/media/contacto-imagen-1.webp": {
     "width": 1536,
     "height": 992,
@@ -86,24 +104,6 @@
       {
         "src": "/media/contacto-imagen-1.webp",
         "width": 1536
-      }
-    ]
-  },
-  "/media/contacto-imagen-2.webp": {
-    "width": 1122,
-    "height": 1402,
-    "variants": [
-      {
-        "src": "/media/contacto-imagen-2-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/contacto-imagen-2-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/contacto-imagen-2.webp",
-        "width": 1122
       }
     ]
   },
@@ -143,24 +143,6 @@
       }
     ]
   },
-  "/media/contacto-imagen-5.webp": {
-    "width": 1521,
-    "height": 1034,
-    "variants": [
-      {
-        "src": "/media/contacto-imagen-5-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/contacto-imagen-5-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/contacto-imagen-5.webp",
-        "width": 1521
-      }
-    ]
-  },
   "/media/contacto-imagen-6.webp": {
     "width": 1535,
     "height": 1025,
@@ -179,17 +161,39 @@
       }
     ]
   },
-  "/media/inicio-card1.webp": {
-    "width": 941,
-    "height": 1672,
+  "/media/contacto-imagen-2.webp": {
+    "width": 1122,
+    "height": 1402,
     "variants": [
       {
-        "src": "/media/inicio-card1-480.webp",
+        "src": "/media/contacto-imagen-2-480.webp",
         "width": 480
       },
       {
-        "src": "/media/inicio-card1.webp",
-        "width": 941
+        "src": "/media/contacto-imagen-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/contacto-imagen-2.webp",
+        "width": 1122
+      }
+    ]
+  },
+  "/media/contacto-imagen-5.webp": {
+    "width": 1521,
+    "height": 1034,
+    "variants": [
+      {
+        "src": "/media/contacto-imagen-5-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/contacto-imagen-5-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/contacto-imagen-5.webp",
+        "width": 1521
       }
     ]
   },
@@ -229,39 +233,17 @@
       }
     ]
   },
-  "/media/inicio-card4.webp": {
-    "width": 1536,
-    "height": 921,
+  "/media/inicio-card1.webp": {
+    "width": 941,
+    "height": 1672,
     "variants": [
       {
-        "src": "/media/inicio-card4-480.webp",
+        "src": "/media/inicio-card1-480.webp",
         "width": 480
       },
       {
-        "src": "/media/inicio-card4-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/inicio-card4.webp",
-        "width": 1536
-      }
-    ]
-  },
-  "/media/inicio-hero-logopeda.webp": {
-    "width": 1536,
-    "height": 1024,
-    "variants": [
-      {
-        "src": "/media/inicio-hero-logopeda-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/inicio-hero-logopeda-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/inicio-hero-logopeda.webp",
-        "width": 1536
+        "src": "/media/inicio-card1.webp",
+        "width": 941
       }
     ]
   },
@@ -279,24 +261,6 @@
       },
       {
         "src": "/media/inicio-imagen-1.webp",
-        "width": 1536
-      }
-    ]
-  },
-  "/media/inicio-imagen-2.webp": {
-    "width": 1536,
-    "height": 1024,
-    "variants": [
-      {
-        "src": "/media/inicio-imagen-2-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/inicio-imagen-2-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/inicio-imagen-2.webp",
         "width": 1536
       }
     ]
@@ -319,21 +283,39 @@
       }
     ]
   },
-  "/media/inicio-imagen-4.webp": {
-    "width": 1526,
-    "height": 1031,
+  "/media/inicio-imagen-2.webp": {
+    "width": 1536,
+    "height": 1024,
     "variants": [
       {
-        "src": "/media/inicio-imagen-4-480.webp",
+        "src": "/media/inicio-imagen-2-480.webp",
         "width": 480
       },
       {
-        "src": "/media/inicio-imagen-4-960.webp",
+        "src": "/media/inicio-imagen-2-960.webp",
         "width": 960
       },
       {
-        "src": "/media/inicio-imagen-4.webp",
-        "width": 1526
+        "src": "/media/inicio-imagen-2.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/inicio-card4.webp": {
+    "width": 1536,
+    "height": 921,
+    "variants": [
+      {
+        "src": "/media/inicio-card4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/inicio-card4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/inicio-card4.webp",
+        "width": 1536
       }
     ]
   },
@@ -355,6 +337,24 @@
       }
     ]
   },
+  "/media/inicio-imagen-4.webp": {
+    "width": 1526,
+    "height": 1031,
+    "variants": [
+      {
+        "src": "/media/inicio-imagen-4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/inicio-imagen-4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/inicio-imagen-4.webp",
+        "width": 1526
+      }
+    ]
+  },
   "/media/inicio-terapia1.webp": {
     "width": 1536,
     "height": 1024,
@@ -369,24 +369,6 @@
       },
       {
         "src": "/media/inicio-terapia1.webp",
-        "width": 1536
-      }
-    ]
-  },
-  "/media/inicio-terapia2.webp": {
-    "width": 1536,
-    "height": 1024,
-    "variants": [
-      {
-        "src": "/media/inicio-terapia2-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/inicio-terapia2-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/inicio-terapia2.webp",
         "width": 1536
       }
     ]
@@ -427,6 +409,42 @@
       }
     ]
   },
+  "/media/inicio-terapia2.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/inicio-terapia2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/inicio-terapia2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/inicio-terapia2.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio1-imagen-1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "variants": [
+      {
+        "src": "/media/servicio1-imagen-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio1-imagen-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio1-imagen-1.webp",
+        "width": 1254
+      }
+    ]
+  },
   "/media/metodologia-imagen-1.webp": {
     "width": 1024,
     "height": 1536,
@@ -463,21 +481,21 @@
       }
     ]
   },
-  "/media/servicio1-imagen-1.webp": {
-    "width": 1254,
-    "height": 1254,
+  "/media/servicio1-imagen-3.webp": {
+    "width": 1536,
+    "height": 863,
     "variants": [
       {
-        "src": "/media/servicio1-imagen-1-480.webp",
+        "src": "/media/servicio1-imagen-3-480.webp",
         "width": 480
       },
       {
-        "src": "/media/servicio1-imagen-1-960.webp",
+        "src": "/media/servicio1-imagen-3-960.webp",
         "width": 960
       },
       {
-        "src": "/media/servicio1-imagen-1.webp",
-        "width": 1254
+        "src": "/media/servicio1-imagen-3.webp",
+        "width": 1536
       }
     ]
   },
@@ -499,24 +517,6 @@
       }
     ]
   },
-  "/media/servicio1-imagen-3.webp": {
-    "width": 1536,
-    "height": 863,
-    "variants": [
-      {
-        "src": "/media/servicio1-imagen-3-480.webp",
-        "width": 480
-      },
-      {
-        "src": "/media/servicio1-imagen-3-960.webp",
-        "width": 960
-      },
-      {
-        "src": "/media/servicio1-imagen-3.webp",
-        "width": 1536
-      }
-    ]
-  },
   "/media/servicio1-imagen-4.webp": {
     "width": 1536,
     "height": 1024,
@@ -531,6 +531,420 @@
       },
       {
         "src": "/media/servicio1-imagen-4.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio1-imagen-5.webp": {
+    "width": 1499,
+    "height": 1049,
+    "variants": [
+      {
+        "src": "/media/servicio1-imagen-5-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio1-imagen-5-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio1-imagen-5.webp",
+        "width": 1499
+      }
+    ]
+  },
+  "/media/servicio2-hero-servicio2.webp": {
+    "width": 1484,
+    "height": 1060,
+    "variants": [
+      {
+        "src": "/media/servicio2-hero-servicio2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-hero-servicio2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-hero-servicio2.webp",
+        "width": 1484
+      }
+    ]
+  },
+  "/media/servicio1-imagen-6.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio1-imagen-6-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio1-imagen-6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio1-imagen-6.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio2-imagen-1.webp": {
+    "width": 1536,
+    "height": 860,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-1.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio2-imagen-3.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-3.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/media/servicio2-imagen-2.webp": {
+    "width": 1536,
+    "height": 921,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-2.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio2-imagen-4.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-4.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio2-imagen-5.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-5-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-5-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-5.webp",
+        "width": 1448
+      }
+    ]
+  },
+  "/media/servicio3-hero-servicio3.webp": {
+    "width": 1447,
+    "height": 1087,
+    "variants": [
+      {
+        "src": "/media/servicio3-hero-servicio3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio3-hero-servicio3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio3-hero-servicio3.webp",
+        "width": 1447
+      }
+    ]
+  },
+  "/media/servicio2-imagen-6.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio2-imagen-6-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio2-imagen-6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio2-imagen-6.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio3-imagen-1.webp": {
+    "width": 1451,
+    "height": 1084,
+    "variants": [
+      {
+        "src": "/media/servicio3-imagen-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio3-imagen-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio3-imagen-1.webp",
+        "width": 1451
+      }
+    ]
+  },
+  "/media/servicio3-imagen-2.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio3-imagen-2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio3-imagen-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio3-imagen-2.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio4-hero-servicio4.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio4-hero-servicio4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio4-hero-servicio4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio4-hero-servicio4.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio3-imagen-3.webp": {
+    "width": 1536,
+    "height": 864,
+    "variants": [
+      {
+        "src": "/media/servicio3-imagen-3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio3-imagen-3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio3-imagen-3.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio4-imagen-1.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio4-imagen-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio4-imagen-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio4-imagen-1.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/sobremi-imagen-1.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-1-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-1.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio4-imagen-2.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio4-imagen-2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio4-imagen-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio4-imagen-2.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/servicio4-imagen-3.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/servicio4-imagen-3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/servicio4-imagen-3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/servicio4-imagen-3.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/sobremi-imagen-2.webp": {
+    "width": 1025,
+    "height": 1535,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-2-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-2.webp",
+        "width": 1025
+      }
+    ]
+  },
+  "/media/sobremi-imagen-4.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-4-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-4-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-4.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/sobremi-imagen-3.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-3-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-3.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "/media/sobremi-imagen-5.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-5-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-5-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-5.webp",
+        "width": 1536
+      }
+    ]
+  },
+  "/media/sobremi-imagen-6.webp": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/media/sobremi-imagen-6-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/sobremi-imagen-6-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/sobremi-imagen-6.webp",
         "width": 1536
       }
     ]

@@ -1,9 +1,9 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
-import PreFooter from '../components/preFooter.jsx';
+import PreFooter from '../components/PreFooter.astro';
 import Footer from '../components/Footer.jsx';
 import WhatsAppWidget from '../components/WhatsAppWidget.astro';
 const {title='Jenny Moscol · Logopedia', description='Atención logopédica cercana y personalizada para niños, jóvenes y adultos. Consulta online y presencial con Jenny Moscol.'} = Astro.props;
 ---
-<!doctype html><html lang="es"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#d9825b"/><title>{title}</title></head><body><a href="#contenido" class="skip-link">Saltar al contenido</a><Navbar/><main id="contenido"><slot/></main><PreFooter/><Footer/><WhatsAppWidget/><script>import "../scripts/carousels.js";</script></body></html>
+<!doctype html><html lang="es"><head><meta charset="UTF-8"/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#d9825b"/><title>{title}</title></head><body><a href="#contenido" class="skip-link">Saltar al contenido</a><Navbar/><main id="contenido"><slot/></main><PreFooter/><Footer/><WhatsAppWidget/><script>import "../scripts/carousels.js";</script></body></html>

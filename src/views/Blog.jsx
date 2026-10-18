@@ -1,3 +1,4 @@
+import { heroStyle } from '../utils/hero-style.js';
 import ResponsiveImage from '../components/ResponsiveImage.jsx';
 import React from "react";
 import "./Blog.css";
@@ -71,7 +72,7 @@ function Blog() {
       {/* ===========================
           1. HERO SECTION (ESTILO SRV1)
       =========================== */}
-      <section className="blog-hero" style={{ backgroundImage: `url(${heroImg})` }}>
+      <section className="blog-hero" data-responsive-hero="" style={heroStyle(heroImg)}>
         <div className="blog-hero-container-inner">
           <div className="blog-hero-content">
             <span className="blog-hero-subtitle">
